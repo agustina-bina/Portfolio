@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "titulo": "5 Outfits Minimalistas que Nunca Fallan",
+    "categoria": "outfits",
+    "autor": "Fashion Team",
+    "fecha": "2026-03-12",
+    "imagen": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80",
+    "descripcion": "Ideas de outfits simples y elegantes para el día a día que te harán lucir impecable sin esfuerzo.",
+    "contenido": "<p>El minimalismo en la moda no es solo una tendencia, es un estilo de vida que te permite lucir elegante con menos piezas pero mejor seleccionadas.</p><h3>1. El Clásico Blanco y Negro</h3><p>Una combinación que nunca pasa de moda. Pantalón negro de corte recto con una blusa blanca de algodón. Añade unos zapatos nude para alargar la silueta.</p><h3>2. El Look Monocromático</h3><p>Elige un solo color y juega con diferentes tonalidades y texturas. El beige es perfecto para crear looks sofisticados y atemporales.</p><h3>3. Jeans y Blazer</h3><p>La combinación perfecta entre lo casual y lo formal. Un blazer oversized eleva cualquier look de jeans y camiseta básica.</p><h3>4. El Vestido Camisero</h3><p>Versátil como ningún otro. Puedes usarlo solo, con cinturón, o como chaqueta sobre unos pantalones.</p><h3>5. Total Look Denim</h3><p>El denim sobre denim ha vuelto con fuerza. La clave está en combinar diferentes tonos de azul para crear profundidad.</p><p>Recuerda que la clave del minimalismo está en la calidad sobre la cantidad. Invierte en piezas atemporales que puedas combinar de múltiples formas.</p>"
+  },
+  {
+    "id": 2,
+    "titulo": "Tendencias de Moda Primavera 2026",
+    "categoria": "tendencias",
+    "autor": "Fashion Team",
+    "fecha": "2026-03-10",
+    "imagen": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80",
+    "descripcion": "Las prendas y estilos que dominarán esta temporada primaveral.",
+    "contenido": "<p>La primavera 2026 nos trae una mezcla refrescante de colores vibrantes y siluetas relajadas que reflejan un optimismo renovado.</p><h3>Colores de la Temporada</h3><p>El rosa fuerte, el naranja coral y los verdes lima dominan las pasarelas. También veremos mucho uso de tonos pastel en combinaciones inesperadas.</p><h3>Siluetas Clave</h3><p>Las faldas midi plisadas continúan siendo protagonistas, junto con los pantalones de tiro alto y pierna ancha. Los blazers oversized siguen siendo imprescindibles.</p><h3>Tejidos Estrella</h3><ul><li>Lino en todas sus formas</li><li>Algodón orgánico</li><li>Seda satinada</li><li>Crochet y tejidos artesanales</li></ul><h3>Accesorios Imprescindibles</h3><p>Los bolsos de rafia, las sandalias de plataforma y las gafas de sol oversize completarán tus looks primaverales.</p>"
+  },
+  {
+    "id": 3,
+    "titulo": "Guía Completa para Vestir en la Oficina",
+    "categoria": "guias",
+    "autor": "Style Expert",
+    "fecha": "2026-03-08",
+    "imagen": "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&q=80",
+    "descripcion": "Todo lo que necesitas saber para crear un armario profesional y versátil.",
+    "contenido": "<p>Vestir para la oficina ya no significa aburrirse. Te mostramos cómo crear looks profesionales que reflejen tu personalidad.</p><h3>Las Piezas Base</h3><p>Un buen armario de oficina necesita: pantalones de vestir en negro y navy, blusas en colores neutros, un blazer bien cortado y vestidos midi.</p><h3>Colores que Funcionan</h3><p>Los neutros son tu mejor aliado: negro, blanco, gris, beige y navy. Añade toques de color con accesorios o una prenda statement.</p><h3>El Arte de Combinar</h3><ul><li>Mezcla texturas para añadir interés visual</li><li>Juega con las proporciones</li><li>No subestimes el poder de los accesorios</li></ul><h3>Errores a Evitar</h3><p>Ropa muy ajustada, escotes pronunciados, colores demasiado llamativos o prendas muy casuales como jeans desgastados.</p>"
+  },
+  {
+    "id": 4,
+    "titulo": "Cómo Crear el Look Casual Perfecto",
+    "categoria": "casual",
+    "autor": "Fashion Team",
+    "fecha": "2026-03-06",
+    "imagen": "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&q=80",
+    "descripcion": "Aprende a lucir increíble en tu día a día sin sacrificar la comodidad.",
+    "contenido": "<p>El look casual perfecto es aquel que combina comodidad con estilo. Aquí te revelamos todos los secretos.</p><h3>Las Básicas Imprescindibles</h3><p>Camisetas de algodón de calidad, jeans que te queden perfectos, sneakers blancas y una buena chaqueta de entretiempo.</p><h3>Eleva tu Casual</h3><p>La diferencia entre un look casual básico y uno estiloso está en los detalles:</p><ul><li>Accesorios cuidadosamente seleccionados</li><li>Prendas bien planchadas</li><li>Combinación de colores armoniosa</li><li>Un bolso de calidad</li></ul><h3>La Regla del 70/30</h3><p>70% prendas básicas y 30% piezas statement. Esta proporción garantiza looks equilibrados y fáciles de armar.</p>"
+  },
+  {
+    "id": 5,
+    "titulo": "Elegancia para Eventos Formales",
+    "categoria": "formal",
+    "autor": "Style Expert",
+    "fecha": "2026-03-04",
+    "imagen": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800&q=80",
+    "descripcion": "Guía definitiva para brillar en cualquier evento elegante.",
+    "contenido": "<p>Los eventos formales requieren una planificación especial. Te guiamos paso a paso para que siempre aciertes.</p><h3>Entender el Dress Code</h3><ul><li><strong>Black Tie:</strong> Vestido largo o cocktail elegante</li><li><strong>Cocktail:</strong> Vestido midi o corto elegante</li><li><strong>Formal:</strong> Vestido elegante o traje</li><li><strong>Smart Casual:</strong> Elegante pero relajado</li></ul><h3>Colores que Nunca Fallan</h3><p>Negro, navy, burdeos, verde esmeralda y champagne son opciones seguras para cualquier evento formal.</p><h3>Los Accesorios</h3><p>Menos es más. Un clutch elegante, pendientes statement y zapatos de tacón son suficientes. Evita sobrecargar el look.</p>"
+  },
+  {
+    "id": 6,
+    "titulo": "Moda Sostenible: El Futuro del Estilo",
+    "categoria": "tendencias",
+    "autor": "Eco Fashion",
+    "fecha": "2026-03-02",
+    "imagen": "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80",
+    "descripcion": "Descubre cómo ser elegante mientras cuidas el planeta.",
+    "contenido": "<p>La moda sostenible ya no es una alternativa, es el camino a seguir. Aprende a construir un armario consciente.</p><h3>¿Qué es la Moda Sostenible?</h3><p>Es aquella que tiene en cuenta el impacto ambiental y social en toda la cadena de producción, desde las materias primas hasta el producto final.</p><h3>Cómo Empezar</h3><ul><li>Compra menos pero mejor calidad</li><li>Elige marcas transparentes</li><li>Opta por materiales naturales y reciclados</li><li>Cuida tus prendas para que duren más</li></ul><h3>Marcas a Conocer</h3><p>Cada vez más marcas se suman al movimiento sostenible, ofreciendo opciones elegantes y responsables con el medio ambiente.</p>"
+  },
+  {
+    "id": 7,
+    "titulo": "Colores de Temporada: Cómo Usarlos",
+    "categoria": "temporada",
+    "autor": "Fashion Team",
+    "fecha": "2026-02-28",
+    "imagen": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80",
+    "descripcion": "Aprende a incorporar los colores de moda en tus outfits diarios.",
+    "contenido": "<p>Los colores de esta temporada son vibrantes y llenos de energía. Te enseñamos cómo incorporarlos sin miedo.</p><h3>El Rosa Viva</h3><p>El heredero del Viva Magenta sigue fuerte. Úsalo en prendas statement o en accesorios si prefieres algo más sutil.</p><h3>Naranja Atardecer</h3><p>Cálido y favorecedor, combina perfectamente con neutros como el beige y el blanco.</p><h3>Verde Botella</h3><p>Elegante y sofisticado, perfecto para looks de oficina y eventos.</p><h3>Reglas de Combinación</h3><ul><li>Combina colores vibrantes con neutros</li><li>No mezcles más de dos colores fuertes</li><li>Los colores complementarios crean looks impactantes</li></ul>"
+  },
+  {
+    "id": 8,
+    "titulo": "Accesorios que Transforman tu Look",
+    "categoria": "guias",
+    "autor": "Style Expert",
+    "fecha": "2026-02-25",
+    "imagen": "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=800&q=80",
+    "descripcion": "Los accesorios correctos pueden elevar cualquier outfit básico.",
+    "contenido": "<p>Los accesorios son el secreto mejor guardado de las personas con estilo. Aprende a usarlos a tu favor.</p><h3>Bolsos</h3><p>Un buen bolso puede ser la diferencia entre un look correcto y uno espectacular. Invierte en clásicos atemporales.</p><h3>Joyería</h3><ul><li>Los pendientes grandes llaman la atención al rostro</li><li>Los collares definen el escote</li><li>Las pulseras añaden movimiento</li></ul><h3>Cinturones</h3><p>Definen la cintura y añaden estructura a cualquier look. Son especialmente efectivos sobre vestidos y blazers.</p><h3>Pañuelos</h3><p>Versátiles como ningún otro accesorio. Úsalos en el cuello, el pelo, el bolso o la muñeca.</p>"
+  },
+  {
+    "id": 9,
+    "titulo": "Street Style: Inspiración Urbana",
+    "categoria": "outfits",
+    "autor": "Urban Fashion",
+    "fecha": "2026-02-22",
+    "imagen": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&q=80",
+    "descripcion": "Las mejores ideas de street style para lucir increíble en la ciudad.",
+    "contenido": "<p>El street style es donde la moda real cobra vida. Te mostramos cómo capturar esa esencia urbana en tus looks.</p><h3>Elementos Clave</h3><ul><li>Sneakers de diseñador o vintage</li><li>Jeans de corte interesante</li><li>Cazadoras de cuero o denim</li><li>Gafas de sol oversized</li></ul><h3>El Arte de Mezclar</h3><p>El street style trata de romper reglas. Mezcla high fashion con vintage, sport con elegante, estructurado con fluido.</p><h3>Capas, Capas, Capas</h3><p>Aprende a jugar con las capas. Una camiseta básica, una camisa abierta, una chaqueta... las posibilidades son infinitas.</p>"
+  },
+  {
+    "id": 10,
+    "titulo": "El Armario Cápsula Perfecto",
+    "categoria": "guias",
+    "autor": "Fashion Team",
+    "fecha": "2026-02-20",
+    "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "descripcion": "Cómo crear un armario funcional con solo 30 piezas.",
+    "contenido": "<p>Un armario cápsula bien planificado te permite crear infinitos looks con pocas prendas. Aquí te explicamos cómo.</p><h3>¿Qué es un Armario Cápsula?</h3><p>Es una colección reducida de prendas versátiles que se combinan entre sí fácilmente, eliminando el estrés de \"no tengo nada que ponerme\".</p><h3>Las 30 Piezas Esenciales</h3><ul><li>5 tops básicos (blanco, negro, gris, beige, rayas)</li><li>3 camisas</li><li>3 pantalones</li><li>2 jeans</li><li>3 vestidos</li><li>2 faldas</li><li>3 chaquetas/blazers</li><li>2 abrigos</li><li>4 pares de zapatos</li><li>3 bolsos</li></ul><h3>La Clave del Éxito</h3><p>Elige una paleta de colores coherente que te permita combinar todas las piezas entre sí sin pensar.</p>"
+  },
+  {
+    "id": 11,
+    "titulo": "Looks de Verano que Amarás",
+    "categoria": "temporada",
+    "autor": "Summer Style",
+    "fecha": "2026-02-18",
+    "imagen": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80",
+    "descripcion": "Prepárate para el verano con estos looks frescos y estilosos.",
+    "contenido": "<p>El verano es la temporada perfecta para experimentar con la moda. Te presentamos los looks que dominarán esta temporada.</p><h3>Vestidos de Lino</h3><p>Frescos, elegantes y perfectos para cualquier ocasión. El lino es el tejido estrella del verano.</p><h3>Shorts de Tiro Alto</h3><p>Combinados con blusas románticas o camisetas básicas, son la opción perfecta para el día a día.</p><h3>Colores del Verano</h3><ul><li>Blancos inmaculados</li><li>Azules mediterráneos</li><li>Amarillos solares</li><li>Corales vibrantes</li></ul><h3>Accesorios de Verano</h3><p>Sombreros de paja, sandalias de tiras, bolsos de rafia y joyería dorada completan cualquier look veraniego.</p>"
+  },
+  {
+    "id": 12,
+    "titulo": "Denim: La Guía Definitiva",
+    "categoria": "casual",
+    "autor": "Denim Expert",
+    "fecha": "2026-02-15",
+    "imagen": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&q=80",
+    "descripcion": "Todo lo que necesitas saber sobre los jeans y cómo elegir los perfectos.",
+    "contenido": "<p>El denim es probablemente la prenda más versátil de tu armario. Aprende a dominarlo.</p><h3>Tipos de Corte</h3><ul><li><strong>Skinny:</strong> Ajustados en toda la pierna</li><li><strong>Straight:</strong> Rectos desde la cadera</li><li><strong>Wide Leg:</strong> Anchos y fluidos</li><li><strong>Mom Jeans:</strong> Tiro alto, holgados en cadera</li><li><strong>Bootcut:</strong> Acampanados desde la rodilla</li></ul><h3>Cómo Encontrar tu Talla</h3><p>Los jeans deben quedar ajustados al comprarlos, ya que el denim se da con el uso. Busca un tiro que te resulte cómodo.</p><h3>Lavados y Colores</h3><p>El índigo oscuro es más elegante, el lavado medio es versátil, y el claro es perfecto para looks casuales de verano.</p>"
+  }
+]

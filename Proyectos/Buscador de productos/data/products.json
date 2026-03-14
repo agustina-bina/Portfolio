@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "nombre": "Auricular Gamer X1",
+    "categoria": "auriculares",
+    "precio": 79,
+    "imagen": "img/products/headset1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Teclado Mecánico RGB",
+    "categoria": "teclados",
+    "precio": 120,
+    "imagen": "img/products/keyboard1.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Mouse Gamer Pro",
+    "categoria": "mouse",
+    "precio": 45,
+    "imagen": "img/products/mouse1.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Auriculares Inalámbricos BT",
+    "categoria": "auriculares",
+    "precio": 95,
+    "imagen": "img/products/headset2.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Teclado Compacto 60%",
+    "categoria": "teclados",
+    "precio": 85,
+    "imagen": "img/products/keyboard2.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Mouse Ergonómico Vertical",
+    "categoria": "mouse",
+    "precio": 55,
+    "imagen": "img/products/mouse2.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Auriculares Studio Pro",
+    "categoria": "auriculares",
+    "precio": 150,
+    "imagen": "img/products/headset3.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Teclado Gaming Full Size",
+    "categoria": "teclados",
+    "precio": 140,
+    "imagen": "img/products/keyboard3.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Mouse Ultraligero",
+    "categoria": "mouse",
+    "precio": 70,
+    "imagen": "img/products/mouse3.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Webcam HD 1080p",
+    "categoria": "camaras",
+    "precio": 65,
+    "imagen": "img/products/webcam1.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Monitor 24 pulgadas",
+    "categoria": "monitores",
+    "precio": 180,
+    "imagen": "img/products/monitor1.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Mousepad XL Gaming",
+    "categoria": "accesorios",
+    "precio": 25,
+    "imagen": "img/products/mousepad1.jpg"
+  }
+]

@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auriculares gaming de alto rendimiento con sonido envolvente 7.1, cancelación de ruido y máximo confort para sesiones intensas de juego.">
+  <meta name="keywords" content="auriculares gaming, headset gamer, sonido 7.1, gaming headphones">
+  <meta name="theme-color" content="#000000">
+  <title>PULSE PRO | Auriculares Gaming Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #000000;
+      --purple: #7d39eb;
+      --lime: #c6ff33;
+      --white: #ffffff;
+      --gray-dark: #0a0a0a;
+      --gray-medium: #1a1a1a;
+      --gray-light: #2a2a2a;
+      --gray-muted: #a0a0a0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .font-display {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--gray-light);
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--lime);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: none;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    .nav-links a {
+      color: var(--gray-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--lime);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--lime);
+      color: var(--black);
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(198, 255, 51, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--purple);
+      border: 1px solid var(--purple);
+    }
+
+    .btn-outline:hover {
+      background: rgba(125, 57, 235, 0.1);
+    }
+
+    .btn-large {
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 5rem;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(125, 57, 235, 0.2), transparent);
+    }
+
+    .hero-glow-1 {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 24rem;
+      height: 24rem;
+      background: rgba(125, 57, 235, 0.1);
+      border-radius: 50%;
+      filter: blur(60px);
+      animation: pulse 4s infinite;
+    }
+
+    .hero-glow-2 {
+      position: absolute;
+      bottom: 25%;
+      right: 25%;
+      width: 18rem;
+      height: 18rem;
+      background: rgba(198, 255, 51, 0.05);
+      border-radius: 50%;
+      filter: blur(60px);
+      animation: pulse 4s infinite 1s;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .hero-text {
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-text {
+        text-align: left;
+      }
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(125, 57, 235, 0.5);
+      background: rgba(125, 57, 235, 0.1);
+      font-size: 0.875rem;
+      color: var(--lime);
+      margin-bottom: 1.5rem;
+    }
+
+    .badge-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: var(--lime);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .text-lime { color: var(--lime); }
+    .text-purple { color: var(--purple); }
+    .text-muted { color: var(--gray-muted); }
+
+    .hero-description {
+      font-size: 1.125rem;
+      color: var(--gray-muted);
+      max-width: 36rem;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-description {
+        margin: 0 0 2rem;
+      }
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-buttons {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-buttons {
+        justify-content: flex-start;
+      }
+    }
+
+    .hero-stats {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-stats {
+        justify-content: flex-start;
+      }
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--lime);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--gray-muted);
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 3rem;
+      background: var(--gray-light);
+    }
+
+    .hero-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: fadeIn 1s ease-out 0.3s both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .hero-image-glow {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(125, 57, 235, 0.3), rgba(198, 255, 51, 0.1));
+      border-radius: 50%;
+      filter: blur(60px);
+      transform: scale(0.75);
+    }
+
+    .hero-svg {
+      width: 100%;
+      max-width: 28rem;
+      filter: drop-shadow(0 0 50px rgba(125, 57, 235, 0.5));
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gray-muted);
+      cursor: pointer;
+      transition: color 0.3s;
+      background: none;
+      border: none;
+    }
+
+    .scroll-indicator:hover {
+      color: var(--lime);
+    }
+
+    .scroll-indicator span {
+      font-size: 0.875rem;
+    }
+
+    .scroll-indicator svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* Benefits Section */
+    .benefits {
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefits::before,
+    .benefits::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(125, 57, 235, 0.5), transparent);
+    }
+
+    .benefits::before { top: 0; }
+    .benefits::after { bottom: 0; background: linear-gradient(90deg, transparent, rgba(198, 255, 51, 0.5), transparent); }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-tag {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--purple);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.75rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .section-description {
+      font-size: 1.125rem;
+      color: var(--gray-muted);
+      max-width: 42rem;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .benefit-card {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: var(--gray-dark);
+      border: 1px solid var(--gray-light);
+      transition: all 0.5s;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .benefit-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .benefit-card:hover {
+      border-color: rgba(125, 57, 235, 0.5);
+      transform: scale(1.02);
+    }
+
+    .benefit-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .benefit-card:hover .benefit-icon {
+      transform: scale(1.1);
+    }
+
+    .benefit-icon svg {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+
+    .benefit-icon.purple {
+      background: rgba(125, 57, 235, 0.2);
+      color: var(--purple);
+    }
+
+    .benefit-icon.lime {
+      background: rgba(198, 255, 51, 0.2);
+      color: var(--lime);
+    }
+
+    .benefit-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .benefit-description {
+      color: var(--gray-muted);
+      line-height: 1.6;
+    }
+
+    /* Product Showcase */
+    .showcase {
+      padding: 6rem 0;
+      background: var(--gray-dark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .showcase-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at bottom, rgba(125, 57, 235, 0.1), transparent);
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .showcase-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .showcase-product {
+      position: relative;
+      aspect-ratio: 1;
+      max-width: 32rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .showcase-product-glow {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(125, 57, 235, 0.2), rgba(198, 255, 51, 0.1));
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .showcase-product-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: rotate 20s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: perspective(1000px) rotateY(0deg); }
+      to { transform: perspective(1000px) rotateY(360deg); }
+    }
+
+    .showcase-product-inner.paused {
+      animation-play-state: paused;
+    }
+
+    .showcase-svg {
+      width: 80%;
+      height: 80%;
+    }
+
+    .showcase-controls {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .control-btn {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid var(--gray-light);
+      color: var(--white);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .control-btn:hover {
+      border-color: var(--purple);
+      background: rgba(125, 57, 235, 0.1);
+    }
+
+    .control-btn.active {
+      background: rgba(125, 57, 235, 0.2);
+      border-color: var(--purple);
+    }
+
+    .showcase-specs {
+      position: relative;
+      z-index: 10;
+    }
+
+    .showcase-specs h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .showcase-specs > p {
+      color: var(--gray-muted);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .specs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .spec-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--gray-light);
+    }
+
+    .spec-label {
+      color: var(--gray-muted);
+    }
+
+    .spec-value {
+      font-weight: 600;
+    }
+
+    .showcase-badges {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .showcase-badge {
+      flex: 1;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      text-align: center;
+    }
+
+    .showcase-badge.purple {
+      background: rgba(125, 57, 235, 0.1);
+      border: 1px solid rgba(125, 57, 235, 0.3);
+    }
+
+    .showcase-badge.lime {
+      background: rgba(198, 255, 51, 0.1);
+      border: 1px solid rgba(198, 255, 51, 0.3);
+    }
+
+    .showcase-badge-value {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .showcase-badge.purple .showcase-badge-value { color: var(--purple); }
+    .showcase-badge.lime .showcase-badge-value { color: var(--lime); }
+
+    .showcase-badge-label {
+      font-size: 0.75rem;
+      color: var(--gray-muted);
+    }
+
+    /* Comparison Section */
+    .comparison {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .comparison::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(125, 57, 235, 0.5), transparent);
+    }
+
+    .model-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .model-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .model-card {
+      position: relative;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: rgba(10, 10, 10, 0.5);
+      border: 1px solid var(--gray-light);
+      cursor: pointer;
+      transition: all 0.5s;
+      text-align: left;
+    }
+
+    .model-card.selected {
+      border-width: 2px;
+      transform: scale(1.02);
+    }
+
+    .model-card.selected.purple { border-color: var(--purple); }
+    .model-card.selected.lime { border-color: var(--lime); }
+    .model-card.selected.white { border-color: var(--white); }
+
+    .model-card:hover {
+      border-color: rgba(125, 57, 235, 0.5);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -0.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--purple);
+      color: var(--black);
+    }
+
+    .model-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .model-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+
+    .model-name.purple { color: var(--purple); }
+    .model-name.lime { color: var(--lime); }
+
+    .model-description {
+      font-size: 0.875rem;
+      color: var(--gray-muted);
+    }
+
+    .model-radio {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      border: 2px solid;
+      transition: background 0.3s;
+    }
+
+    .model-card.selected .model-radio {
+      background: currentColor;
+    }
+
+    .model-price {
+      margin-top: 1rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .model-price-current {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    .model-price-current.purple { color: var(--purple); }
+    .model-price-current.lime { color: var(--lime); }
+
+    .model-price-original {
+      color: var(--gray-muted);
+      text-decoration: line-through;
+      font-size: 0.875rem;
+    }
+
+    .comparison-table {
+      border-radius: 1rem;
+      border: 1px solid var(--gray-light);
+      overflow: hidden;
+      background: var(--gray-dark);
+    }
+
+    .comparison-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .comparison-table th {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      border-bottom: 1px solid var(--gray-light);
+    }
+
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+      text-align: left;
+      color: var(--gray-muted);
+    }
+
+    .comparison-table tr:not(:last-child) td {
+      border-bottom: 1px solid var(--gray-light);
+    }
+
+    .comparison-table .highlight {
+      background: rgba(125, 57, 235, 0.1);
+    }
+
+    .check-icon {
+      color: var(--lime);
+    }
+
+    .x-icon {
+      color: var(--gray-muted);
+      opacity: 0.5;
+    }
+
+    .comparison-cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    /* Reviews Section */
+    .reviews {
+      padding: 6rem 0;
+      background: var(--gray-dark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .reviews-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top, rgba(198, 255, 51, 0.05), transparent);
+    }
+
+    .reviews-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-stats {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .review-stat {
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--gray-light);
+    }
+
+    .review-stat-value {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--lime);
+    }
+
+    .review-stat-label {
+      font-size: 0.875rem;
+      color: var(--gray-muted);
+      margin-top: 0.25rem;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .review-card {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: var(--black);
+      border: 1px solid var(--gray-light);
+      transition: all 0.5s;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .review-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .review-card:hover {
+      border-color: rgba(125, 57, 235, 0.5);
+    }
+
+    .review-quote {
+      width: 2rem;
+      height: 2rem;
+      color: rgba(125, 57, 235, 0.3);
+      margin-bottom: 1rem;
+    }
+
+    .review-text {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .star {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .star.filled {
+      color: var(--lime);
+      fill: var(--lime);
+    }
+
+    .star.empty {
+      color: var(--gray-light);
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .review-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+
+    .review-avatar.purple {
+      background: var(--purple);
+      color: var(--white);
+    }
+
+    .review-avatar.lime {
+      background: var(--lime);
+      color: var(--black);
+    }
+
+    .review-author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review-author-name {
+      font-weight: 600;
+    }
+
+    .review-author-role {
+      font-size: 0.875rem;
+      color: var(--gray-muted);
+    }
+
+    /* CTA Section */
+    .cta {
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(125, 57, 235, 0.2), var(--black), rgba(198, 255, 51, 0.1));
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(198, 255, 51, 0.5), transparent);
+    }
+
+    .cta-circle-1,
+    .cta-circle-2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 1px solid;
+      animation: pulse 4s infinite;
+    }
+
+    .cta-circle-1 {
+      width: 37rem;
+      height: 37rem;
+      border-color: rgba(125, 57, 235, 0.2);
+    }
+
+    .cta-circle-2 {
+      width: 25rem;
+      height: 25rem;
+      border-color: rgba(198, 255, 51, 0.2);
+      animation-delay: 0.5s;
+    }
+
+    .cta-content {
+      max-width: 56rem;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .cta-price {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .cta-price-original {
+      font-size: 1.5rem;
+      color: var(--gray-muted);
+      text-decoration: line-through;
+    }
+
+    .cta-price-current {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: var(--lime);
+    }
+
+    .cta-discount {
+      padding: 0.25rem 0.75rem;
+      background: var(--purple);
+      color: var(--white);
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 9999px;
+    }
+
+    .cta-product {
+      color: var(--gray-muted);
+      margin-top: 0.5rem;
+    }
+
+    .cta-button {
+      margin-top: 2.5rem;
+    }
+
+    .trust-badges {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 640px) {
+      .trust-badges {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      background: rgba(10, 10, 10, 0.5);
+      border: 1px solid var(--gray-light);
+    }
+
+    .trust-badge svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: var(--purple);
+    }
+
+    .trust-badge span {
+      font-weight: 500;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--gray-dark);
+      border-top: 1px solid var(--gray-light);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 2fr repeat(4, 1fr);
+      }
+    }
+
+    .footer-brand {
+      grid-column: span 2;
+    }
+
+    @media (min-width: 1024px) {
+      .footer-brand {
+        grid-column: span 1;
+      }
+    }
+
+    .footer-brand p {
+      color: var(--gray-muted);
+      margin-top: 1rem;
+      max-width: 18rem;
+      line-height: 1.7;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .footer-social a {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: var(--gray-medium);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-muted);
+      transition: all 0.3s;
+    }
+
+    .footer-social a:hover {
+      background: var(--purple);
+      color: var(--white);
+    }
+
+    .footer-social svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .footer-column h4 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-column a {
+      color: var(--gray-muted);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column a:hover {
+      color: var(--lime);
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gray-muted);
+    }
+
+    .footer-contact-item svg {
+      width: 1rem;
+      height: 1rem;
+      color: var(--purple);
+    }
+
+    .footer-bottom {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray-light);
+    }
+
+    .footer-bottom-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom-inner {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .payment-methods {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .payment-methods span {
+      font-size: 0.875rem;
+      color: var(--gray-muted);
+    }
+
+    .payment-icons {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .payment-icon {
+      padding: 0.25rem 0.75rem;
+      background: var(--gray-medium);
+      border-radius: 0.25rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--gray-muted);
+    }
+
+    .footer-legal {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: var(--gray-muted);
+    }
+
+    .footer-legal a {
+      color: var(--gray-muted);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-legal a:hover {
+      color: var(--lime);
+    }
+
+    .footer-copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      color: var(--gray-muted);
+    }
+
+    /* Utility classes */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="logo">PULSE</a>
+      <ul class="nav-links">
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <a href="#comprar" class="btn btn-primary">Comprar</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Nuevo lanzamiento 2026
+          </div>
+          
+          <h1>
+            ESCUCHA CADA
+            <br>
+            <span class="text-lime">DETALLE</span>
+            <br>
+            DEL JUEGO
+          </h1>
+          
+          <p class="hero-description">
+            Auriculares gaming de alto rendimiento con sonido envolvente 7.1, 
+            disenados para darte la ventaja competitiva que necesitas.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#comprar" class="btn btn-primary btn-large">Comprar ahora</a>
+            <a href="#beneficios" class="btn btn-outline btn-large">Ver caracteristicas</a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat">
+              <p class="stat-value font-display">7.1</p>
+              <p class="stat-label">Sonido Surround</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <p class="stat-value font-display">50mm</p>
+              <p class="stat-label">Drivers</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <p class="stat-value font-display">15h+</p>
+              <p class="stat-label">Bateria</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-image">
+          <div class="hero-image-glow"></div>
+          <svg class="hero-svg" viewBox="0 0 400 400">
+            <path 
+              d="M80 200 Q80 80 200 60 Q320 80 320 200" 
+              fill="none" 
+              stroke="#1a1a1a" 
+              stroke-width="28"
+            />
+            <path 
+              d="M80 200 Q80 80 200 60 Q320 80 320 200" 
+              fill="none" 
+              stroke="url(#headbandGradient)" 
+              stroke-width="24"
+            />
+            <path 
+              d="M120 195 Q120 110 200 95 Q280 110 280 195" 
+              fill="none" 
+              stroke="#2a2a2a" 
+              stroke-width="12"
+            />
+            <ellipse cx="80" cy="220" rx="55" ry="70" fill="#1a1a1a"/>
+            <ellipse cx="80" cy="220" rx="50" ry="65" fill="#0a0a0a"/>
+            <ellipse cx="80" cy="220" rx="40" ry="52" fill="#1a1a1a"/>
+            <ellipse cx="80" cy="220" rx="32" ry="42" fill="#0a0a0a"/>
+            <ellipse cx="80" cy="220" rx="25" ry="32" fill="none" stroke="#7d39eb" stroke-width="2" opacity="0.8"/>
+            <circle cx="80" cy="220" r="8" fill="#7d39eb" opacity="0.6">
+              <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <ellipse cx="320" cy="220" rx="55" ry="70" fill="#1a1a1a"/>
+            <ellipse cx="320" cy="220" rx="50" ry="65" fill="#0a0a0a"/>
+            <ellipse cx="320" cy="220" rx="40" ry="52" fill="#1a1a1a"/>
+            <ellipse cx="320" cy="220" rx="32" ry="42" fill="#0a0a0a"/>
+            <ellipse cx="320" cy="220" rx="25" ry="32" fill="none" stroke="#c6ff33" stroke-width="2" opacity="0.8"/>
+            <circle cx="320" cy="220" r="8" fill="#c6ff33" opacity="0.6">
+              <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+            </circle>
+            <path d="M35 240 Q10 250 15 290" fill="none" stroke="#2a2a2a" stroke-width="6" stroke-linecap="round"/>
+            <ellipse cx="15" cy="295" rx="8" ry="12" fill="#1a1a1a"/>
+            <ellipse cx="15" cy="295" rx="5" ry="8" fill="#c6ff33" opacity="0.3"/>
+            <path d="M45 170 L55 155" stroke="#7d39eb" stroke-width="3" stroke-linecap="round" opacity="0.8">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+            </path>
+            <path d="M345 170 L355 155" stroke="#c6ff33" stroke-width="3" stroke-linecap="round" opacity="0.8">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="0.75s"/>
+            </path>
+            <defs>
+              <linearGradient id="headbandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#7d39eb"/>
+                <stop offset="50%" stop-color="#1a1a1a"/>
+                <stop offset="100%" stop-color="#c6ff33"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+    <button class="scroll-indicator" onclick="document.getElementById('beneficios').scrollIntoView({behavior: 'smooth'})">
+      <span>Descubre mas</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Por que elegirnos</span>
+        <h2 class="section-title font-display">
+          VENTAJA <span class="text-lime">COMPETITIVA</span>
+        </h2>
+        <p class="section-description">
+          Cada caracteristica esta disenada para mejorar tu rendimiento en el juego. 
+          No son solo especificaciones, son ventajas reales.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card" data-index="0">
+          <div class="benefit-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </div>
+          <h3 class="benefit-title font-display">Sonido Envolvente 7.1</h3>
+          <p class="benefit-description">Escucha cada paso enemigo con precision milimetrica. El audio posicional te da ventaja competitiva real.</p>
+        </div>
+
+        <div class="benefit-card" data-index="1">
+          <div class="benefit-icon lime">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+            </svg>
+          </div>
+          <h3 class="benefit-title font-display">Microfono con Cancelacion de Ruido</h3>
+          <p class="benefit-description">Tu voz se escucha clara y nitida. Elimina el ruido de fondo y comunica estrategias sin interrupciones.</p>
+        </div>
+
+        <div class="benefit-card" data-index="2">
+          <div class="benefit-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+            </svg>
+          </div>
+          <h3 class="benefit-title font-display">Almohadillas Memory Foam</h3>
+          <p class="benefit-description">Comodidad extrema para sesiones de mas de 10 horas. Espuma viscoelastica que se adapta a ti.</p>
+        </div>
+
+        <div class="benefit-card" data-index="3">
+          <div class="benefit-icon lime">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="benefit-title font-display">Latencia Ultra Baja</h3>
+          <p class="benefit-description">Conexion inalambrica de 2.4GHz con menos de 20ms de latencia. Reacciona mas rapido que tu oponente.</p>
+        </div>
+
+        <div class="benefit-card" data-index="4">
+          <div class="benefit-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="benefit-title font-display">Construccion Premium</h3>
+          <p class="benefit-description">Aluminio y acero reforzado. Disenado para resistir el uso intensivo del gaming competitivo.</p>
+        </div>
+
+        <div class="benefit-card" data-index="5">
+          <div class="benefit-icon lime">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+            </svg>
+          </div>
+          <h3 class="benefit-title font-display">Multi-Plataforma</h3>
+          <p class="benefit-description">Compatible con PC, PlayStation, Xbox, Switch y moviles. Un auricular para todos tus dispositivos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section class="showcase" id="productos">
+    <div class="showcase-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag text-lime">Diseno Premium</span>
+        <h2 class="section-title font-display">
+          EXPLORA EL <span class="text-purple">PRODUCTO</span>
+        </h2>
+      </div>
+
+      <div class="showcase-grid">
+        <div class="showcase-product">
+          <div class="showcase-product-glow"></div>
+          <div class="showcase-product-inner" id="productRotation">
+            <svg class="showcase-svg" viewBox="0 0 400 400">
+              <path d="M80 200 Q80 80 200 60 Q320 80 320 200" fill="none" stroke="#1a1a1a" stroke-width="28"/>
+              <path d="M80 200 Q80 80 200 60 Q320 80 320 200" fill="none" stroke="url(#showcaseGradient)" stroke-width="24"/>
+              <path d="M120 195 Q120 110 200 95 Q280 110 280 195" fill="none" stroke="#2a2a2a" stroke-width="12"/>
+              <ellipse cx="80" cy="220" rx="55" ry="70" fill="#1a1a1a"/>
+              <ellipse cx="80" cy="220" rx="50" ry="65" fill="#0a0a0a"/>
+              <ellipse cx="80" cy="220" rx="40" ry="52" fill="#1a1a1a"/>
+              <ellipse cx="80" cy="220" rx="32" ry="42" fill="#0a0a0a"/>
+              <ellipse cx="80" cy="220" rx="25" ry="32" fill="none" stroke="#7d39eb" stroke-width="3">
+                <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+              </ellipse>
+              <ellipse cx="320" cy="220" rx="55" ry="70" fill="#1a1a1a"/>
+              <ellipse cx="320" cy="220" rx="50" ry="65" fill="#0a0a0a"/>
+              <ellipse cx="320" cy="220" rx="40" ry="52" fill="#1a1a1a"/>
+              <ellipse cx="320" cy="220" rx="32" ry="42" fill="#0a0a0a"/>
+              <ellipse cx="320" cy="220" rx="25" ry="32" fill="none" stroke="#c6ff33" stroke-width="3">
+                <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="1s"/>
+              </ellipse>
+              <path d="M35 240 Q10 250 15 290" fill="none" stroke="#2a2a2a" stroke-width="6" stroke-linecap="round"/>
+              <ellipse cx="15" cy="295" rx="8" ry="12" fill="#1a1a1a"/>
+              <circle cx="15" cy="295" r="4" fill="#c6ff33" opacity="0.5"/>
+              <defs>
+                <linearGradient id="showcaseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#7d39eb"/>
+                  <stop offset="50%" stop-color="#2a2a2a"/>
+                  <stop offset="100%" stop-color="#c6ff33"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="showcase-controls">
+            <button class="control-btn" onclick="toggleRotation()" id="rotateBtn" title="Pausar/Reanudar rotacion">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="showcase-specs">
+          <h3 class="font-display">PULSE PRO X</h3>
+          <p>
+            Nuestro modelo insignia disenado para gamers profesionales y entusiastas 
+            que no aceptan compromisos en calidad de audio.
+          </p>
+
+          <div class="specs-list">
+            <div class="spec-item">
+              <span class="spec-label">Respuesta de Frecuencia</span>
+              <span class="spec-value">20Hz - 40kHz</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Impedancia</span>
+              <span class="spec-value">32 Ohm</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Sensibilidad</span>
+              <span class="spec-value">118dB SPL/mW</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Peso</span>
+              <span class="spec-value">320g</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Conectividad</span>
+              <span class="spec-value">2.4GHz / Bluetooth 5.3 / USB-C</span>
+            </div>
+          </div>
+
+          <div class="showcase-badges">
+            <div class="showcase-badge purple">
+              <p class="showcase-badge-value font-display">2 ANOS</p>
+              <p class="showcase-badge-label">Garantia</p>
+            </div>
+            <div class="showcase-badge lime">
+              <p class="showcase-badge-value font-display">GRATIS</p>
+              <p class="showcase-badge-label">Envio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="comparison" id="modelos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Modelos</span>
+        <h2 class="section-title font-display">
+          ELIGE TU <span class="text-lime">MODELO</span>
+        </h2>
+        <p class="section-description">
+          Tres opciones disenadas para diferentes necesidades y presupuestos.
+        </p>
+      </div>
+
+      <div class="model-cards">
+        <button class="model-card white" data-model="lite" onclick="selectModel('lite')">
+          <div class="model-card-header">
+            <div>
+              <h3 class="model-name">PULSE LITE</h3>
+              <p class="model-description">Ideal para empezar</p>
+            </div>
+            <div class="model-radio" style="border-color: var(--white); color: var(--white);"></div>
+          </div>
+          <div class="model-price">
+            <span class="model-price-current">$79</span>
+            <span class="model-price-original">$99</span>
+          </div>
+        </button>
+
+        <button class="model-card purple selected" data-model="pro" onclick="selectModel('pro')">
+          <div class="popular-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+            Mas vendido
+          </div>
+          <div class="model-card-header">
+            <div>
+              <h3 class="model-name purple">PULSE PRO</h3>
+              <p class="model-description">El mas vendido</p>
+            </div>
+            <div class="model-radio" style="border-color: var(--purple); color: var(--purple);"></div>
+          </div>
+          <div class="model-price">
+            <span class="model-price-current purple">$149</span>
+            <span class="model-price-original">$199</span>
+          </div>
+        </button>
+
+        <button class="model-card lime" data-model="elite" onclick="selectModel('elite')">
+          <div class="model-card-header">
+            <div>
+              <h3 class="model-name lime">PULSE ELITE</h3>
+              <p class="model-description">Para profesionales</p>
+            </div>
+            <div class="model-radio" style="border-color: var(--lime); color: var(--lime);"></div>
+          </div>
+          <div class="model-price">
+            <span class="model-price-current lime">$229</span>
+            <span class="model-price-original">$299</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="comparison-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Caracteristica</th>
+              <th>PULSE LITE</th>
+              <th id="proHeader" class="highlight">PULSE PRO</th>
+              <th>PULSE ELITE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tipo de Sonido</td>
+              <td>Stereo</td>
+              <td class="highlight">7.1 Surround</td>
+              <td>7.1 Hi-Res</td>
+            </tr>
+            <tr>
+              <td>Drivers</td>
+              <td>40mm</td>
+              <td class="highlight">50mm</td>
+              <td>53mm Planar</td>
+            </tr>
+            <tr>
+              <td>Microfono</td>
+              <td>Basico</td>
+              <td class="highlight">Cancelacion de ruido</td>
+              <td>Studio Grade</td>
+            </tr>
+            <tr>
+              <td>Almohadillas</td>
+              <td>Foam</td>
+              <td class="highlight">Memory Foam</td>
+              <td>Cuero + Gel</td>
+            </tr>
+            <tr>
+              <td>Bateria</td>
+              <td>8h</td>
+              <td class="highlight">15h</td>
+              <td>20h</td>
+            </tr>
+            <tr>
+              <td>Conectividad</td>
+              <td>USB / 3.5mm</td>
+              <td class="highlight">2.4GHz / USB-C</td>
+              <td>2.4GHz / BT 5.3 / USB-C</td>
+            </tr>
+            <tr>
+              <td>RGB</td>
+              <td><span class="x-icon">&#10005;</span></td>
+              <td class="highlight"><span class="check-icon">&#10003;</span></td>
+              <td><span class="check-icon">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>Cancelacion Ruido</td>
+              <td><span class="x-icon">&#10005;</span></td>
+              <td class="highlight"><span class="check-icon">&#10003;</span></td>
+              <td><span class="check-icon">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>Surround Virtual</td>
+              <td><span class="x-icon">&#10005;</span></td>
+              <td class="highlight"><span class="check-icon">&#10003;</span></td>
+              <td><span class="check-icon">&#10003;</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="comparison-cta">
+        <a href="#comprar" class="btn btn-primary btn-large" id="buySelectedBtn">Comprar PULSE PRO - $149</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews" id="reviews">
+    <div class="reviews-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag text-lime">Testimonios</span>
+        <h2 class="section-title font-display">
+          LO QUE DICEN <span class="text-purple">NUESTROS GAMERS</span>
+        </h2>
+        <p class="section-description">
+          Miles de jugadores ya mejoraron su experiencia de juego con PULSE.
+        </p>
+      </div>
+
+      <div class="reviews-stats">
+        <div class="review-stat">
+          <p class="review-stat-value font-display">4.9<span style="font-size: 0.75em">/5</span></p>
+          <p class="review-stat-label">Calificacion promedio</p>
+        </div>
+        <div class="review-stat">
+          <p class="review-stat-value font-display">15K+</p>
+          <p class="review-stat-label">Unidades vendidas</p>
+        </div>
+        <div class="review-stat">
+          <p class="review-stat-value font-display">98%</p>
+          <p class="review-stat-label">Clientes satisfechos</p>
+        </div>
+        <div class="review-stat">
+          <p class="review-stat-value font-display">50+</p>
+          <p class="review-stat-label">Premios gaming</p>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card" data-review="0">
+          <svg class="review-quote" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p class="review-text">"Increible calidad de sonido. Puedo escuchar cada paso enemigo antes de que aparezca. Mi K/D mejoro notablemente."</p>
+          <div class="review-stars">
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <div class="review-author">
+            <div class="review-avatar purple">MG</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Martin G.</span>
+              <span class="review-author-role">Jugador Competitivo - Valorant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-review="1">
+          <svg class="review-quote" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p class="review-text">"El microfono es perfecto para streaming. Mis viewers notan la diferencia de audio inmediatamente. Super comodos para sesiones largas."</p>
+          <div class="review-stars">
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <div class="review-author">
+            <div class="review-avatar lime">LR</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Lucia R.</span>
+              <span class="review-author-role">Streamer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-review="2">
+          <svg class="review-quote" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p class="review-text">"La mejor inversion gaming que hice. El sonido 7.1 hace que los juegos se sientan completamente diferentes."</p>
+          <div class="review-stars">
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <div class="review-author">
+            <div class="review-avatar purple">DM</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Diego M.</span>
+              <span class="review-author-role">Gamer Casual - Call of Duty</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-review="3">
+          <svg class="review-quote" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p class="review-text">"Los uso para entrenamientos de 8 horas y siguen siendo comodos. El audio posicional es exacto, ideal para torneos."</p>
+          <div class="review-stars">
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <div class="review-author">
+            <div class="review-avatar lime">VS</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Valentina S.</span>
+              <span class="review-author-role">Jugadora Pro - CS2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-review="4">
+          <svg class="review-quote" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p class="review-text">"Excelente relacion calidad-precio. La cancelacion de ruido del mic es real, no marketing. Muy recomendados."</p>
+          <div class="review-stars">
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star empty" viewBox="0 0 20 20" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <div class="review-author">
+            <div class="review-avatar purple">NP</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Nicolas P.</span>
+              <span class="review-author-role">Content Creator - Fortnite</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-review="5">
+          <svg class="review-quote" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          <p class="review-text">"Probe muchos auriculares gaming y estos son los mejores en este rango de precio. El build quality es premium."</p>
+          <div class="review-stars">
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="star filled" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <div class="review-author">
+            <div class="review-avatar lime">CT</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Camila T.</span>
+              <span class="review-author-role">Gamer Entusiasta - Apex Legends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="comprar">
+    <div class="cta-bg"></div>
+    <div class="cta-circle-1"></div>
+    <div class="cta-circle-2"></div>
+    
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-tag text-lime">Oferta limitada</span>
+        
+        <h2 class="section-title font-display" style="margin-top: 1rem;">
+          MEJORA TU <span class="text-purple">EXPERIENCIA</span> DE JUEGO <span class="text-lime">HOY</span>
+        </h2>
+        
+        <p class="section-description" style="margin-top: 1.5rem;">
+          No te conformes con menos. El audio perfecto puede ser la diferencia entre ganar y perder.
+        </p>
+
+        <div class="cta-price">
+          <span class="cta-price-original">$199</span>
+          <span class="cta-price-current font-display">$149</span>
+          <span class="cta-discount">-25%</span>
+        </div>
+        <p class="cta-product">PULSE PRO - El mas vendido</p>
+
+        <div class="cta-button">
+          <a href="#" class="btn btn-primary btn-large">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            Comprar ahora
+          </a>
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+            </svg>
+            <span>Envio gratis en 24-48h</span>
+          </div>
+          <div class="trust-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            <span>2 anos de garantia</span>
+          </div>
+          <div class="trust-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <span>Soporte 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">PULSE</a>
+          <p>Auriculares gaming de alto rendimiento disenados para darte la ventaja competitiva.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" stroke-width="2"/>
+                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitch">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="#">PULSE Lite</a></li>
+            <li><a href="#">PULSE Pro</a></li>
+            <li><a href="#">PULSE Elite</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Garantia</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Carreras</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contacto</h4>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <span>info@pulse.gaming</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <span>+54 11 1234-5678</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span>Buenos Aires, Argentina</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <div class="payment-methods">
+            <span>Metodos de pago:</span>
+            <div class="payment-icons">
+              <span class="payment-icon">Visa</span>
+              <span class="payment-icon">MC</span>
+              <span class="payment-icon">AMEX</span>
+              <span class="payment-icon">MP</span>
+            </div>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Terminos de servicio</a>
+            <span>-</span>
+            <a href="#">Politica de privacidad</a>
+            <span>-</span>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 Agustina Bins PULSE Gaming. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe benefit cards
+    document.querySelectorAll('.benefit-card').forEach((card, index) => {
+      card.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    });
+
+    // Observe review cards
+    document.querySelectorAll('.review-card').forEach((card, index) => {
+      card.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    });
+
+    // Product rotation toggle
+    let isRotating = true;
+    function toggleRotation() {
+      const product = document.getElementById('productRotation');
+      const btn = document.getElementById('rotateBtn');
+      isRotating = !isRotating;
+      
+      if (isRotating) {
+        product.classList.remove('paused');
+        btn.classList.remove('active');
+      } else {
+        product.classList.add('paused');
+        btn.classList.add('active');
+      }
+    }
+
+    // Model selection
+    const models = {
+      lite: { name: 'PULSE LITE', price: 79 },
+      pro: { name: 'PULSE PRO', price: 149 },
+      elite: { name: 'PULSE ELITE', price: 229 }
+    };
+
+    function selectModel(modelId) {
+      // Update card selection
+      document.querySelectorAll('.model-card').forEach(card => {
+        card.classList.remove('selected');
+      });
+      document.querySelector(`[data-model="${modelId}"]`).classList.add('selected');
+
+      // Update table highlighting
+      const columns = ['lite', 'pro', 'elite'];
+      columns.forEach((col, index) => {
+        const headerIndex = index + 2; // Skip first column
+        const header = document.querySelector(`.comparison-table thead th:nth-child(${headerIndex})`);
+        const cells = document.querySelectorAll(`.comparison-table tbody td:nth-child(${headerIndex})`);
+        
+        if (col === modelId) {
+          header.classList.add('highlight');
+          cells.forEach(cell => cell.classList.add('highlight'));
+        } else {
+          header.classList.remove('highlight');
+          cells.forEach(cell => cell.classList.remove('highlight'));
+        }
+      });
+
+      // Update buy button
+      const model = models[modelId];
+      document.getElementById('buySelectedBtn').textContent = `Comprar ${model.name} - $${model.price}`;
+    }
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+      } else {
+        navbar.style.background = 'rgba(0, 0, 0, 0.8)';
+      }
+    });
+  </script>
+</body>
+</html>

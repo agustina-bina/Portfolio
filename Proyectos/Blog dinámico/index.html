@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Style - Blog de Moda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Essential<span>Style</span></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#" data-category="all" class="nav-link active">Inicio</a></li>
+                    <li><a href="#" data-category="tendencias" class="nav-link">Tendencias</a></li>
+                    <li><a href="#" data-category="outfits" class="nav-link">Outfits</a></li>
+                    <li><a href="#" data-category="guias" class="nav-link">Guías de Estilo</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar artículos..." aria-label="Buscar artículos">
+                <button id="search-btn" aria-label="Buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Descubre tu estilo único</h1>
+            <p>Tendencias, outfits y guías de estilo para inspirar tu día a día</p>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories-filter" id="categories-filter">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="tendencias">Tendencias</button>
+                <button class="category-btn" data-category="outfits">Outfits</button>
+                <button class="category-btn" data-category="guias">Guías de Estilo</button>
+                <button class="category-btn" data-category="casual">Ropa Casual</button>
+                <button class="category-btn" data-category="formal">Ropa Formal</button>
+                <button class="category-btn" data-category="temporada">Temporada</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title">Últimos Artículos</h2>
+            <div class="articles-grid" id="articles-grid">
+                <!-- Articles will be loaded dynamically -->
+            </div>
+            <div class="no-results" id="no-results" style="display: none;">
+                <p>No se encontraron artículos que coincidan con tu búsqueda.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Article Modal -->
+    <div class="article-modal" id="article-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar artículo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+            <article class="full-article" id="full-article">
+                <!-- Full article content will be loaded here -->
+            </article>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="contact-text">¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría escucharte!</p>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Tu email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Essential<span>Style</span></a>
+                    <p>Tu fuente de inspiración para el estilo diario</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#" data-category="tendencias">Tendencias</a></li>
+                        <li><a href="#" data-category="outfits">Outfits</a></li>
+                        <li><a href="#" data-category="guias">Guías de Estilo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" x2="12" y1="17" y2="22"></line>
+                                <path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Essential Style. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/articles.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

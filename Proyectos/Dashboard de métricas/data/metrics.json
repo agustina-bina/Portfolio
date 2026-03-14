@@ -1,0 +1,332 @@
+{
+  "campaigns": {
+    "summary": {
+      "impressions": 125400,
+      "impressions_change": 12.5,
+      "clicks": 5268,
+      "clicks_change": 8.3,
+      "ctr": 4.2,
+      "ctr_change": 1.2,
+      "conversions": 340,
+      "conversions_change": 15.3,
+      "total_spend": 15500,
+      "spend_change": 5.8
+    },
+    "performance": {
+      "labels": ["1", "5", "10", "15", "20", "25", "30"],
+      "clicks": [150, 280, 420, 380, 520, 610, 490],
+      "conversions": [12, 22, 35, 28, 42, 51, 38]
+    },
+    "list": [
+      {
+        "id": 1,
+        "name": "Campaña Verano 2024",
+        "budget": 2500,
+        "spent": 1850,
+        "clicks": 2300,
+        "conversions": 120,
+        "ctr": 5.2,
+        "status": "active",
+        "daily_data": {
+          "labels": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+          "clicks": [320, 380, 410, 290, 350, 280, 270],
+          "conversions": [18, 22, 24, 15, 19, 12, 10]
+        }
+      },
+      {
+        "id": 2,
+        "name": "Black Friday",
+        "budget": 5000,
+        "spent": 4200,
+        "clicks": 5400,
+        "conversions": 310,
+        "ctr": 6.1,
+        "status": "active",
+        "daily_data": {
+          "labels": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+          "clicks": [680, 720, 850, 790, 920, 780, 660],
+          "conversions": [38, 42, 52, 45, 58, 42, 33]
+        }
+      },
+      {
+        "id": 3,
+        "name": "Campaña Navidad",
+        "budget": 4000,
+        "spent": 4000,
+        "clicks": 4200,
+        "conversions": 245,
+        "ctr": 5.8,
+        "status": "completed",
+        "daily_data": {
+          "labels": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+          "clicks": [580, 620, 680, 590, 650, 540, 540],
+          "conversions": [32, 38, 42, 35, 40, 30, 28]
+        }
+      },
+      {
+        "id": 4,
+        "name": "Año Nuevo 2025",
+        "budget": 3500,
+        "spent": 2100,
+        "clicks": 3100,
+        "conversions": 180,
+        "ctr": 5.5,
+        "status": "active",
+        "daily_data": {
+          "labels": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+          "clicks": [420, 480, 520, 410, 470, 400, 400],
+          "conversions": [24, 28, 32, 22, 28, 24, 22]
+        }
+      },
+      {
+        "id": 5,
+        "name": "San Valentín",
+        "budget": 1500,
+        "spent": 890,
+        "clicks": 890,
+        "conversions": 45,
+        "ctr": 4.2,
+        "status": "paused",
+        "daily_data": {
+          "labels": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+          "clicks": [120, 140, 160, 110, 130, 120, 110],
+          "conversions": [6, 8, 10, 5, 7, 5, 4]
+        }
+      },
+      {
+        "id": 6,
+        "name": "Día de la Madre",
+        "budget": 2000,
+        "spent": 0,
+        "clicks": 0,
+        "conversions": 0,
+        "ctr": 0,
+        "status": "scheduled",
+        "daily_data": {
+          "labels": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+          "clicks": [0, 0, 0, 0, 0, 0, 0],
+          "conversions": [0, 0, 0, 0, 0, 0, 0]
+        }
+      }
+    ]
+  },
+  "social_media": {
+    "summary": {
+      "total_followers": 12450,
+      "followers_change": 8.2,
+      "monthly_growth": 1250,
+      "growth_change": 12.5,
+      "engagement": 3.8,
+      "engagement_change": 0.5,
+      "reach": 78000,
+      "reach_change": -2.1
+    },
+    "followers_growth": {
+      "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul"],
+      "data": [9800, 10200, 10800, 11200, 11600, 12000, 12450]
+    },
+    "distribution": {
+      "labels": ["Instagram", "TikTok", "YouTube", "Facebook"],
+      "data": [42, 28, 18, 12],
+      "followers": [5229, 3486, 2241, 1494]
+    },
+    "networks": {
+      "all": {
+        "followers": 12450,
+        "engagement": 3.8,
+        "reach": 78000,
+        "posts": 156,
+        "growth": {
+          "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul"],
+          "data": [9800, 10200, 10800, 11200, 11600, 12000, 12450]
+        }
+      },
+      "instagram": {
+        "followers": 5229,
+        "engagement": 4.5,
+        "reach": 32000,
+        "posts": 48,
+        "growth": {
+          "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul"],
+          "data": [4100, 4300, 4550, 4750, 4900, 5050, 5229]
+        }
+      },
+      "tiktok": {
+        "followers": 3486,
+        "engagement": 5.2,
+        "reach": 28000,
+        "posts": 62,
+        "growth": {
+          "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul"],
+          "data": [2500, 2700, 2900, 3100, 3200, 3350, 3486]
+        }
+      },
+      "youtube": {
+        "followers": 2241,
+        "engagement": 2.8,
+        "reach": 12000,
+        "posts": 24,
+        "growth": {
+          "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul"],
+          "data": [1800, 1900, 2000, 2050, 2100, 2180, 2241]
+        }
+      },
+      "facebook": {
+        "followers": 1494,
+        "engagement": 1.9,
+        "reach": 6000,
+        "posts": 22,
+        "growth": {
+          "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul"],
+          "data": [1400, 1420, 1440, 1455, 1470, 1482, 1494]
+        }
+      }
+    }
+  },
+  "conversions": {
+    "summary": {
+      "sales": 342,
+      "sales_change": 18.5,
+      "conversion_rate": 3.2,
+      "rate_change": 0.8,
+      "total_revenue": 28450,
+      "revenue_change": 22.3,
+      "avg_value": 83.19,
+      "avg_change": 5.2
+    },
+    "funnel": {
+      "visitors": 10680,
+      "clicks": 5268,
+      "leads": 1580,
+      "purchases": 342
+    },
+    "by_channel": {
+      "all": {
+        "sales": 342,
+        "revenue": 28450,
+        "conversion_rate": 3.2,
+        "funnel": {
+          "visitors": 10680,
+          "clicks": 5268,
+          "leads": 1580,
+          "purchases": 342
+        },
+        "table": [
+          { "date": "2024-01-15", "channel": "Google Ads", "conversions": 45, "revenue": 3825 },
+          { "date": "2024-01-14", "channel": "Instagram Ads", "conversions": 38, "revenue": 3154 },
+          { "date": "2024-01-13", "channel": "Email Marketing", "conversions": 28, "revenue": 2324 },
+          { "date": "2024-01-12", "channel": "Orgánico", "conversions": 22, "revenue": 1826 },
+          { "date": "2024-01-11", "channel": "Google Ads", "conversions": 52, "revenue": 4316 },
+          { "date": "2024-01-10", "channel": "Instagram Ads", "conversions": 41, "revenue": 3403 }
+        ]
+      },
+      "google_ads": {
+        "sales": 125,
+        "revenue": 10375,
+        "conversion_rate": 4.1,
+        "funnel": {
+          "visitors": 3050,
+          "clicks": 1525,
+          "leads": 458,
+          "purchases": 125
+        },
+        "table": [
+          { "date": "2024-01-15", "channel": "Google Ads", "conversions": 45, "revenue": 3825 },
+          { "date": "2024-01-11", "channel": "Google Ads", "conversions": 52, "revenue": 4316 },
+          { "date": "2024-01-08", "channel": "Google Ads", "conversions": 28, "revenue": 2234 }
+        ]
+      },
+      "instagram_ads": {
+        "sales": 98,
+        "revenue": 8134,
+        "conversion_rate": 3.5,
+        "funnel": {
+          "visitors": 2800,
+          "clicks": 1400,
+          "leads": 420,
+          "purchases": 98
+        },
+        "table": [
+          { "date": "2024-01-14", "channel": "Instagram Ads", "conversions": 38, "revenue": 3154 },
+          { "date": "2024-01-10", "channel": "Instagram Ads", "conversions": 41, "revenue": 3403 },
+          { "date": "2024-01-06", "channel": "Instagram Ads", "conversions": 19, "revenue": 1577 }
+        ]
+      },
+      "email_marketing": {
+        "sales": 72,
+        "revenue": 5976,
+        "conversion_rate": 5.8,
+        "funnel": {
+          "visitors": 1240,
+          "clicks": 868,
+          "leads": 310,
+          "purchases": 72
+        },
+        "table": [
+          { "date": "2024-01-13", "channel": "Email Marketing", "conversions": 28, "revenue": 2324 },
+          { "date": "2024-01-09", "channel": "Email Marketing", "conversions": 24, "revenue": 1992 },
+          { "date": "2024-01-05", "channel": "Email Marketing", "conversions": 20, "revenue": 1660 }
+        ]
+      },
+      "organic": {
+        "sales": 47,
+        "revenue": 3901,
+        "conversion_rate": 1.3,
+        "funnel": {
+          "visitors": 3590,
+          "clicks": 1475,
+          "leads": 392,
+          "purchases": 47
+        },
+        "table": [
+          { "date": "2024-01-12", "channel": "Orgánico", "conversions": 22, "revenue": 1826 },
+          { "date": "2024-01-07", "channel": "Orgánico", "conversions": 15, "revenue": 1245 },
+          { "date": "2024-01-03", "channel": "Orgánico", "conversions": 10, "revenue": 830 }
+        ]
+      }
+    }
+  },
+  "reports": {
+    "today": {
+      "impressions": 4180,
+      "clicks": 175,
+      "conversions": 11,
+      "revenue": 913
+    },
+    "last_7_days": {
+      "impressions": 29260,
+      "clicks": 1230,
+      "conversions": 79,
+      "revenue": 6557
+    },
+    "last_30_days": {
+      "impressions": 125400,
+      "clicks": 5268,
+      "conversions": 340,
+      "revenue": 28220
+    },
+    "custom": {
+      "impressions": 0,
+      "clicks": 0,
+      "conversions": 0,
+      "revenue": 0
+    }
+  },
+  "settings": {
+    "account": {
+      "name": "Marketing Team",
+      "email": "marketing@empresa.com",
+      "company": "Mi Empresa S.A."
+    },
+    "preferences": {
+      "theme": "light",
+      "currency": "USD",
+      "language": "es"
+    },
+    "notifications": {
+      "campaign_alerts": true,
+      "conversion_alerts": true,
+      "auto_reports": false
+    }
+  }
+}

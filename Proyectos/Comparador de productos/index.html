@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCompare - Comparador de Periféricos</title>
+  <meta name="description" content="Compara periféricos gaming y elige el mejor para tu setup. Auriculares, teclados y mouse.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>TechCompare</h1>
+    <p>Compara periféricos y elige el mejor para tu setup.</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <!-- Sección de selección de productos -->
+    <section class="selection-section">
+      <!-- Selector Producto 1 -->
+      <div class="product-selector">
+        <label class="selector-label">Producto 1</label>
+        <select id="product-selector-1" class="product-dropdown">
+          <option value="">Cargando productos...</option>
+        </select>
+        <div id="preview-1" class="product-preview"></div>
+      </div>
+
+      <!-- Selector Producto 2 -->
+      <div class="product-selector">
+        <label class="selector-label">Producto 2</label>
+        <select id="product-selector-2" class="product-dropdown">
+          <option value="">Cargando productos...</option>
+        </select>
+        <div id="preview-2" class="product-preview"></div>
+      </div>
+    </section>
+
+    <!-- Botón de comparar -->
+    <div class="compare-btn-container">
+      <button id="compare-btn" class="compare-btn" disabled>
+        Comparar productos
+      </button>
+    </div>
+
+    <!-- Sección de comparación -->
+    <section id="comparison-section" class="comparison-section">
+      <!-- El contenido se genera dinámicamente -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>TechCompare © 2026 - Tu herramienta de comparación de periféricos</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
