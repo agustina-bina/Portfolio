@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aurora Café - Café de especialidad, pastelería artesanal y un espacio para disfrutar en un ambiente cálido y acogedor.">
+    <title>Aurora Café | Café de Especialidad</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Aurora Café</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Galería</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <a href="#contact" class="btn btn--primary nav__btn">Reservar Mesa</a>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <img src="img/hero-coffee.jpg" alt="Interior de Aurora Café" class="hero__img">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content container">
+                <span class="hero__subtitle">Café de Especialidad</span>
+                <h1 class="hero__title">Aurora Café</h1>
+                <p class="hero__description">Café de especialidad, pastelería artesanal y un espacio para disfrutar.</p>
+                <div class="hero__buttons">
+                    <a href="#services" class="btn btn--primary btn--lg">Ver Menú</a>
+                    <a href="#contact" class="btn btn--outline btn--lg">Reservar Mesa</a>
+                </div>
+            </div>
+            <a href="#about" class="hero__scroll" aria-label="Scroll hacia abajo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__content">
+                        <span class="section__subtitle">Nuestra Historia</span>
+                        <h2 class="section__title">Sobre Nosotros</h2>
+                        <p class="about__text">
+                            Nacimos con la idea de crear un espacio donde el café de especialidad y la pastelería artesanal se encuentren en un ambiente cálido y acogedor.
+                        </p>
+                        <p class="about__text">
+                            Desde 2018, seleccionamos los mejores granos de café de origen único, tostados artesanalmente para resaltar sus sabores únicos. Cada taza cuenta una historia, y cada visita se convierte en una experiencia memorable.
+                        </p>
+                        <ul class="about__features">
+                            <li class="about__feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Granos de origen único</span>
+                            </li>
+                            <li class="about__feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Tostado artesanal semanal</span>
+                            </li>
+                            <li class="about__feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Pastelería hecha en casa</span>
+                            </li>
+                            <li class="about__feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Ambiente acogedor y tranquilo</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about__image">
+                        <img src="img/about-beans.jpg" alt="Granos de café tostados artesanalmente" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Nuestra Oferta</span>
+                    <h2 class="section__title">Qué Ofrecemos</h2>
+                    <p class="section__description">Descubre todo lo que tenemos preparado para ti</p>
+                </div>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="img/coffee-cup.jpg" alt="Café de especialidad con latte art" loading="lazy">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                                    <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                                    <line x1="6" y1="2" x2="6" y2="4"></line>
+                                    <line x1="10" y1="2" x2="10" y2="4"></line>
+                                    <line x1="14" y1="2" x2="14" y2="4"></line>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Café de Especialidad</h3>
+                            <p class="service-card__text">Selección de granos de origen único, tostados artesanalmente cada semana para garantizar frescura y sabor excepcional.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="img/pastry.jpg" alt="Pastelería artesanal" loading="lazy">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 21h10"></path>
+                                    <path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"></path>
+                                    <path d="M11.38 12a2.4 2.4 0 0 1-.4-4.77 2.4 2.4 0 0 1 3.2-2.77 2.4 2.4 0 0 1 3.47-.63 2.4 2.4 0 0 1 3.37 3.37 2.4 2.4 0 0 1-1.1 3.7 2.51 2.51 0 0 1 .03 1.1"></path>
+                                    <path d="M13 12l-1-1"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Pastelería Artesanal</h3>
+                            <p class="service-card__text">Medialunas recién horneadas, tortas caseras y opciones dulces elaboradas cada día con ingredientes de primera calidad.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="img/brunch.jpg" alt="Brunch completo" loading="lazy">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                                    <path d="M8.5 8.5v.01"></path>
+                                    <path d="M16 15.5v.01"></path>
+                                    <path d="M12 12v.01"></path>
+                                    <path d="M11 17v.01"></path>
+                                    <path d="M7 14v.01"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-card__title">Brunch</h3>
+                            <p class="service-card__text">Opciones dulces y saladas para desayunar o almorzar. Desde tostadas de aguacate hasta huevos benedictinos.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Nuestro Espacio</span>
+                    <h2 class="section__title">Galería</h2>
+                    <p class="section__description">Conoce el ambiente de Aurora Café</p>
+                </div>
+                <div class="gallery__grid">
+                    <figure class="gallery__item gallery__item--large" data-index="0">
+                        <img src="img/gallery-1.jpg" alt="Interior de Aurora Café" loading="lazy">
+                        <figcaption class="gallery__caption">Nuestro espacio</figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-index="1">
+                        <img src="img/gallery-2.jpg" alt="Barista preparando latte art" loading="lazy">
+                        <figcaption class="gallery__caption">Arte latte</figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-index="2">
+                        <img src="img/gallery-3.jpg" alt="Rincón acogedor" loading="lazy">
+                        <figcaption class="gallery__caption">Rincón de lectura</figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-index="3">
+                        <img src="img/gallery-4.jpg" alt="Exhibición de pasteles" loading="lazy">
+                        <figcaption class="gallery__caption">Nuestros postres</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería de imágenes">
+            <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar galería">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Imagen anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Imagen siguiente">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            <div class="lightbox__content">
+                <img src="" alt="" class="lightbox__img" id="lightbox-img">
+                <p class="lightbox__caption" id="lightbox-caption"></p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <span class="section__subtitle">Contactanos</span>
+                        <h2 class="section__title">Visitanos</h2>
+                        <p class="contact__text">
+                            Estamos encantados de recibirte. Ven a disfrutar de un café de especialidad en un ambiente único.
+                        </p>
+                        <ul class="contact__details">
+                            <li class="contact__detail">
+                                <div class="contact__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Dirección</strong>
+                                    <p>Florida 165, Microcentro<br>Buenos Aires, C1005AAC</p>
+                                </div>
+                            </li>
+                            <li class="contact__detail">
+                                <div class="contact__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Teléfono</strong>
+                                    <p><a href="tel:+541143214321">+54 11 4321-4321</a></p>
+                                </div>
+                            </li>
+                            <li class="contact__detail">
+                                <div class="contact__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:hola@auroracafe.com">hola@auroracafe.com</a></p>
+                                </div>
+                            </li>
+                            <li class="contact__detail">
+                                <div class="contact__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Horarios</strong>
+                                    <p>Lun - Vie: 7:00 - 20:00<br>Sáb - Dom: 8:00 - 21:00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form" id="contact-form">
+                            <h3 class="contact__form-title">Envianos un mensaje</h3>
+                            <div class="form__group">
+                                <label for="name" class="form__label">Nombre</label>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Tu nombre" required>
+                                <span class="form__error" id="name-error"></span>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="tu@email.com" required>
+                                <span class="form__error" id="email-error"></span>
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Mensaje</label>
+                                <textarea id="message" name="message" class="form__input form__textarea" placeholder="¿En qué podemos ayudarte?" rows="5" required></textarea>
+                                <span class="form__error" id="message-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location section" id="location">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Encontranos</span>
+                    <h2 class="section__title">Ubicación</h2>
+                    <p class="section__description">Florida 165, Microcentro, Buenos Aires</p>
+                </div>
+                <div class="location__map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895513!2d-58.37435492346775!3d-34.60373555765896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb4f6f3325%3A0xe1e9daf94c9c6ab3!2sFlorida%20165%2C%20C1005AAC%20CABA%2C%20Argentina!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de Aurora Café en Microcentro, Buenos Aires">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">Aurora Café</a>
+                    <p class="footer__description">
+                        Café de especialidad, pastelería artesanal y un espacio para disfrutar.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Navegación</h4>
+                    <ul class="footer__list">
+                        <li><a href="#home" class="footer__link">Inicio</a></li>
+                        <li><a href="#about" class="footer__link">Nosotros</a></li>
+                        <li><a href="#services" class="footer__link">Servicios</a></li>
+                        <li><a href="#gallery" class="footer__link">Galería</a></li>
+                        <li><a href="#contact" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4 class="footer__title">Horarios</h4>
+                    <ul class="footer__list">
+                        <li>Lunes - Viernes</li>
+                        <li><strong>7:00 - 20:00</strong></li>
+                        <li class="footer__spacer"></li>
+                        <li>Sábado - Domingo</li>
+                        <li><strong>8:00 - 21:00</strong></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contacto</h4>
+                    <ul class="footer__list">
+                        <li>Florida 165</li>
+                        <li>Microcentro, Buenos Aires</li>
+                        <li class="footer__spacer"></li>
+                        <li><a href="tel:+541143214321">+54 11 4321-4321</a></li>
+                        <li><a href="mailto:hola@auroracafe.com">hola@auroracafe.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Aurora Café. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <div class="toast__content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toast__icon">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span class="toast__message" id="toast-message">Mensaje enviado correctamente</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

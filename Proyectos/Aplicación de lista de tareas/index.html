@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - Organiza tus tareas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">TaskFlow</h1>
+      <p class="header__subtitle">Organiza tus tareas y mantén el control de tu día.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Task Input Section -->
+      <section class="task-input">
+        <div class="task-input__container">
+          <input 
+            type="text" 
+            id="taskInput" 
+            class="task-input__field" 
+            placeholder="Escribir nueva tarea..."
+            autocomplete="off"
+          >
+          <button id="addTaskBtn" class="task-input__button">
+            Agregar
+          </button>
+        </div>
+      </section>
+
+      <!-- Tasks List Section -->
+      <section class="tasks-section">
+        <div class="tasks-header">
+          <h2 class="tasks-header__title">Mis Tareas</h2>
+          <span id="taskCount" class="tasks-header__count">0 tareas</span>
+        </div>
+        <ul id="tasksList" class="tasks-list">
+          <!-- Tasks will be rendered here dynamically -->
+        </ul>
+        <div id="emptyState" class="empty-state">
+          <div class="empty-state__icon">📝</div>
+          <p class="empty-state__text">No tienes tareas pendientes</p>
+          <p class="empty-state__subtext">¡Agrega una nueva tarea para comenzar!</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">TaskFlow &copy; 2026 - Tu productividad importa</p>
+    </footer>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/tasks.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

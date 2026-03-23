@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Auricular Gamer X1",
+    "categoria": "auriculares",
+    "precio": 79,
+    "imagen": "img/products/headset1.png",
+    "specs": {
+      "conexion": "USB",
+      "sonido": "7.1 Surround",
+      "peso": "320g",
+      "microfono": "Sí",
+      "rgb": "No",
+      "compatibilidad": "PC, PS4, PS5",
+      "frecuencia": "20Hz - 20kHz"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Auricular Gamer Pro",
+    "categoria": "auriculares",
+    "precio": 99,
+    "imagen": "img/products/headset2.png",
+    "specs": {
+      "conexion": "USB / Bluetooth",
+      "sonido": "7.1 Premium",
+      "peso": "290g",
+      "microfono": "Cancelación de ruido",
+      "rgb": "Sí",
+      "compatibilidad": "PC, PS4, PS5, Xbox",
+      "frecuencia": "15Hz - 25kHz"
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado Mecánico RGB",
+    "categoria": "teclados",
+    "precio": 129,
+    "imagen": "img/products/keyboard1.png",
+    "specs": {
+      "conexion": "USB-C",
+      "tipo": "Mecánico",
+      "switches": "Cherry MX Red",
+      "layout": "Full Size",
+      "rgb": "Sí",
+      "compatibilidad": "PC, Mac",
+      "peso": "1.1kg"
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Teclado Compacto TKL",
+    "categoria": "teclados",
+    "precio": 89,
+    "imagen": "img/products/keyboard2.png",
+    "specs": {
+      "conexion": "USB / Wireless",
+      "tipo": "Mecánico",
+      "switches": "Gateron Brown",
+      "layout": "TKL (80%)",
+      "rgb": "Sí",
+      "compatibilidad": "PC, Mac, Linux",
+      "peso": "750g"
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Mouse Gaming Ultra",
+    "categoria": "mouse",
+    "precio": 69,
+    "imagen": "img/products/mouse1.png",
+    "specs": {
+      "conexion": "USB",
+      "sensor": "Óptico 16000 DPI",
+      "peso": "85g",
+      "botones": "6 programables",
+      "rgb": "Sí",
+      "compatibilidad": "PC, Mac",
+      "polling": "1000Hz"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Mouse Wireless Pro",
+    "categoria": "mouse",
+    "precio": 99,
+    "imagen": "img/products/mouse2.png",
+    "specs": {
+      "conexion": "Wireless 2.4GHz / Bluetooth",
+      "sensor": "Óptico 25600 DPI",
+      "peso": "63g",
+      "botones": "8 programables",
+      "rgb": "No",
+      "compatibilidad": "PC, Mac, Linux",
+      "polling": "2000Hz"
+    }
+  }
+]

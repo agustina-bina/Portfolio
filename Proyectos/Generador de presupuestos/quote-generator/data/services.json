@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "Diseño web",
+    "descripcion": "Creación de sitio web profesional con diseño responsive y moderno",
+    "precio": 800,
+    "tieneOpciones": true,
+    "opciones": {
+      "tipo": "paginas",
+      "valores": [1, 5, 10],
+      "etiquetas": ["1 página", "5 páginas", "10 páginas"],
+      "multiplicadores": [1, 2.5, 4]
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Marketing digital",
+    "descripcion": "Gestión de campañas publicitarias en redes sociales y Google Ads",
+    "precio": 500,
+    "tieneOpciones": true,
+    "opciones": {
+      "tipo": "nivel",
+      "valores": ["basico", "intermedio", "avanzado"],
+      "etiquetas": ["Básico", "Intermedio", "Avanzado"],
+      "multiplicadores": [1, 1.8, 3]
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Mantenimiento web",
+    "descripcion": "Soporte técnico y actualizaciones mensuales del sitio",
+    "precio": 200,
+    "tieneOpciones": false
+  },
+  {
+    "id": 4,
+    "nombre": "SEO",
+    "descripcion": "Optimización para motores de búsqueda y posicionamiento orgánico",
+    "precio": 400,
+    "tieneOpciones": true,
+    "opciones": {
+      "tipo": "nivel",
+      "valores": ["local", "nacional", "internacional"],
+      "etiquetas": ["Local", "Nacional", "Internacional"],
+      "multiplicadores": [1, 2, 3.5]
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Diseño de logotipo",
+    "descripcion": "Creación de identidad visual y logotipo profesional",
+    "precio": 350,
+    "tieneOpciones": false
+  },
+  {
+    "id": 6,
+    "nombre": "Hosting y dominio",
+    "descripcion": "Alojamiento web y registro de dominio por un año",
+    "precio": 150,
+    "tieneOpciones": false
+  }
+]

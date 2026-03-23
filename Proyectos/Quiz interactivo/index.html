@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Viajes - Descubrí tu destino ideal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Pantalla inicial -->
+        <section id="start-screen" class="screen active">
+            <div class="start-content">
+                <div class="icon-container">
+                    <span class="travel-icon">✈️</span>
+                </div>
+                <h1>¿Qué destino de viaje es ideal para vos?</h1>
+                <p class="description">Respondé algunas preguntas y descubrí qué lugar del mundo encaja mejor con tu estilo de viaje.</p>
+                <button id="start-btn" class="btn-primary">
+                    <span>Comenzar quiz</span>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+            <div class="decorative-elements">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </section>
+
+        <!-- Pantalla de preguntas -->
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <div class="progress-text">
+                        <span>Pregunta <span id="current-question">1</span> de <span id="total-questions">5</span></span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-content">
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="answers-container" class="answers-container"></div>
+                <button id="next-btn" class="btn-primary btn-next" disabled>
+                    <span>Siguiente</span>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Pantalla de resultado -->
+        <section id="result-screen" class="screen">
+            <div class="result-content">
+                <div class="result-badge">🎉</div>
+                <h2>Tu destino ideal es:</h2>
+                <div class="result-card">
+                    <div id="result-image" class="result-image"></div>
+                    <div class="result-info">
+                        <h3 id="result-title"></h3>
+                        <p id="result-description"></p>
+                    </div>
+                </div>
+                <button id="restart-btn" class="btn-secondary">
+                    <span>🔄</span>
+                    <span>Hacer el quiz nuevamente</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/results.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

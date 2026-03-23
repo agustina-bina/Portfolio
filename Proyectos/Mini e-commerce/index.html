@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belle Beauty | Tienda de Cosméticos y Cuidado Personal</title>
+  <meta name="description" content="Descubre productos de belleza de alta calidad: skincare, maquillaje, cabello, fragancias y cuidado corporal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8b6a5b;
+      --primary-light: #a68576;
+      --secondary: #efd9d5;
+      --background: #f6eee8;
+      --accent: #bfc9b3;
+      --muted: #e8dccb;
+      --foreground: #4a3f3a;
+      --foreground-light: #6b5f58;
+      --white: #ffffff;
+      --radius: 0.5rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--white);
+      border-bottom: 1px solid var(--muted);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 18px;
+      height: 18px;
+      color: var(--white);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      padding: 0.5rem 1rem;
+      color: var(--foreground);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-radius: var(--radius);
+      transition: all 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--secondary);
+      color: var(--primary);
+    }
+
+    .search-container {
+      flex: 1;
+      max-width: 400px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.625rem 1rem 0.625rem 2.5rem;
+      border: 1px solid var(--muted);
+      border-radius: 9999px;
+      background: var(--background);
+      font-size: 0.875rem;
+      color: var(--foreground);
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(139, 106, 91, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.875rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--foreground-light);
+      width: 16px;
+      height: 16px;
+    }
+
+    .cart-button {
+      position: relative;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 0.625rem 1.25rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .cart-button:hover {
+      background: var(--primary-light);
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: var(--accent);
+      color: #3a4235;
+      font-size: 0.75rem;
+      font-weight: 600;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--muted) 100%);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--foreground-light);
+      margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--white);
+      padding: 0.875rem 2rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .hero-cta:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+    }
+
+    /* Main Content */
+    .main-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--foreground);
+    }
+
+    /* Category Filters */
+    .category-filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--muted);
+      background: var(--white);
+      color: var(--foreground);
+      border-radius: 9999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--primary);
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      color: var(--white);
+      border-color: var(--primary);
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--muted);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(139, 106, 91, 0.15);
+    }
+
+    .product-image {
+      aspect-ratio: 1;
+      background: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background: var(--accent);
+      color: #3a4235;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .product-badge.sale {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .product-info {
+      padding: 1.25rem;
+    }
+
+    .product-category {
+      font-size: 0.75rem;
+      color: var(--foreground-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 0.5rem;
+    }
+
+    .product-price {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .price-current {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .price-original {
+      font-size: 0.875rem;
+      color: var(--foreground-light);
+      text-decoration: line-through;
+    }
+
+    .add-to-cart {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .add-to-cart:hover {
+      background: var(--primary-light);
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+      padding: 1rem;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal {
+      background: var(--white);
+      border-radius: var(--radius);
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--background);
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: all 0.2s;
+    }
+
+    .modal-close:hover {
+      background: var(--muted);
+    }
+
+    .modal-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .modal-image {
+      aspect-ratio: 1;
+      background: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .modal-details {
+      padding: 2rem;
+    }
+
+    .modal-category {
+      font-size: 0.75rem;
+      color: var(--foreground-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-name {
+      font-size: 2rem;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+
+    .modal-price {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-price .price-current {
+      font-size: 1.5rem;
+    }
+
+    .modal-description {
+      color: var(--foreground-light);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .modal-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-section h4 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .benefits-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .benefits-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--foreground-light);
+    }
+
+    .benefits-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .ingredients-text {
+      font-size: 0.875rem;
+      color: var(--foreground-light);
+    }
+
+    .quantity-selector {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .quantity-label {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .quantity-controls {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--muted);
+      border-radius: var(--radius);
+    }
+
+    .quantity-btn {
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.25rem;
+      color: var(--foreground);
+      transition: all 0.2s;
+    }
+
+    .quantity-btn:hover {
+      background: var(--background);
+    }
+
+    .quantity-value {
+      width: 50px;
+      text-align: center;
+      font-weight: 500;
+      border-left: 1px solid var(--muted);
+      border-right: 1px solid var(--muted);
+      padding: 0.5rem 0;
+    }
+
+    .modal-add-cart {
+      width: 100%;
+      padding: 1rem;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .modal-add-cart:hover {
+      background: var(--primary-light);
+    }
+
+    /* Cart Drawer */
+    .cart-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 300;
+    }
+
+    .cart-overlay.active {
+      display: block;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 400px;
+      max-width: 100%;
+      height: 100%;
+      background: var(--white);
+      z-index: 301;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s ease;
+    }
+
+    .cart-drawer.active {
+      right: 0;
+    }
+
+    .cart-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart-title {
+      font-size: 1.25rem;
+      color: var(--foreground);
+    }
+
+    .cart-close {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--foreground-light);
+      padding: 0.5rem;
+    }
+
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+    }
+
+    .cart-empty {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--foreground-light);
+    }
+
+    .cart-empty-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1rem;
+      color: var(--muted);
+    }
+
+    .cart-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--muted);
+    }
+
+    .cart-item-image {
+      width: 80px;
+      height: 80px;
+      background: var(--secondary);
+      border-radius: var(--radius);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .cart-item-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cart-item-details {
+      flex: 1;
+    }
+
+    .cart-item-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 0.25rem;
+    }
+
+    .cart-item-price {
+      font-size: 0.875rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .cart-item-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .cart-qty-btn {
+      width: 28px;
+      height: 28px;
+      background: var(--background);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .cart-qty-btn:hover {
+      background: var(--muted);
+    }
+
+    .cart-item-qty {
+      font-weight: 500;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    .cart-item-remove {
+      background: transparent;
+      border: none;
+      color: var(--foreground-light);
+      cursor: pointer;
+      padding: 0.25rem;
+      margin-left: auto;
+    }
+
+    .cart-item-remove:hover {
+      color: #dc2626;
+    }
+
+    .cart-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--muted);
+      background: var(--background);
+    }
+
+    .cart-subtotal {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--foreground-light);
+    }
+
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--foreground);
+    }
+
+    .checkout-btn {
+      width: 100%;
+      padding: 1rem;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .checkout-btn:hover {
+      background: var(--primary-light);
+    }
+
+    .checkout-btn:disabled {
+      background: var(--muted);
+      color: var(--foreground-light);
+      cursor: not-allowed;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--foreground);
+      color: var(--white);
+      padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h4 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.875rem;
+      display: block;
+      padding: 0.25rem 0;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--foreground);
+      color: var(--white);
+      padding: 1rem 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s;
+      z-index: 400;
+    }
+
+    .toast.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .search-container {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .modal-content {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-image {
+        max-height: 300px;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .product-card {
+      animation: fadeIn 0.4s ease forwards;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+        </div>
+        Belle Beauty
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#" class="active" data-category="all">Todos</a></li>
+        <li><a href="#" data-category="skincare">Skincare</a></li>
+        <li><a href="#" data-category="maquillaje">Maquillaje</a></li>
+        <li><a href="#" data-category="cabello">Cabello</a></li>
+        <li><a href="#" data-category="fragancias">Fragancias</a></li>
+        <li><a href="#" data-category="corporal">Corporal</a></li>
+      </ul>
+      
+      <div class="search-container">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" class="search-input" id="searchInput" placeholder="Buscar productos...">
+      </div>
+      
+      <button class="cart-button" id="cartButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        </svg>
+        Carrito
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Belleza que inspira confianza</h1>
+      <p>Descubre nuestra colección curada de productos de belleza premium. Skincare, maquillaje, fragancias y más para realzar tu belleza natural.</p>
+      <a href="#productos" class="hero-cta">Explorar Colección</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-container" id="productos">
+    <div class="section-header">
+      <h2 class="section-title">Nuestros Productos</h2>
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="skincare">Skincare</button>
+        <button class="filter-btn" data-category="maquillaje">Maquillaje</button>
+        <button class="filter-btn" data-category="cabello">Cabello</button>
+        <button class="filter-btn" data-category="fragancias">Fragancias</button>
+        <button class="filter-btn" data-category="corporal">Corporal</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Products will be inserted here -->
+    </div>
+  </main>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="modal-content">
+        <div class="modal-image">
+          <img id="modalImage" src="" alt="">
+        </div>
+        <div class="modal-details">
+          <p class="modal-category" id="modalCategory"></p>
+          <h2 class="modal-name" id="modalName"></h2>
+          <div class="modal-price">
+            <span class="price-current" id="modalPrice"></span>
+            <span class="price-original" id="modalOriginalPrice"></span>
+          </div>
+          <p class="modal-description" id="modalDescription"></p>
+          
+          <div class="modal-section">
+            <h4>Beneficios</h4>
+            <ul class="benefits-list" id="modalBenefits"></ul>
+          </div>
+          
+          <div class="modal-section">
+            <h4>Ingredientes Principales</h4>
+            <p class="ingredients-text" id="modalIngredients"></p>
+          </div>
+          
+          <div class="quantity-selector">
+            <span class="quantity-label">Cantidad:</span>
+            <div class="quantity-controls">
+              <button class="quantity-btn" id="qtyMinus">-</button>
+              <span class="quantity-value" id="qtyValue">1</span>
+              <button class="quantity-btn" id="qtyPlus">+</button>
+            </div>
+          </div>
+          
+          <button class="modal-add-cart" id="modalAddCart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            Agregar al Carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3 class="cart-title">Tu Carrito</h3>
+      <button class="cart-close" id="cartClose">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be inserted here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn" disabled>Proceder al Pago</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Producto agregado al carrito</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Belle Beauty</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; line-height: 1.6;">
+          Tu destino para productos de belleza de alta calidad. Descubre lo mejor en skincare, maquillaje y más.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Categorías</h4>
+        <ul class="footer-links">
+          <li><a href="#">Skincare</a></li>
+          <li><a href="#">Maquillaje</a></li>
+          <li><a href="#">Cabello</a></li>
+          <li><a href="#">Fragancias</a></li>
+          <li><a href="#">Cuidado Corporal</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Ayuda</h4>
+        <ul class="footer-links">
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Devoluciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Términos de Servicio</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Belle Beauty. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Product Data
+    const products = [
+      {
+        id: 1,
+        name: "Sérum Vitamina C Luminoso",
+        category: "skincare",
+        price: 45.00,
+        originalPrice: 55.00,
+        image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop",
+        badge: "Bestseller",
+        description: "Sérum concentrado con vitamina C pura al 15% para iluminar y unificar el tono de la piel. Fórmula antioxidante que protege contra los radicales libres.",
+        benefits: ["Ilumina el rostro", "Reduce manchas", "Protección antioxidante", "Estimula el colágeno"],
+        ingredients: "Vitamina C (Ácido Ascórbico) 15%, Vitamina E, Ácido Hialurónico, Extracto de Aloe Vera"
+      },
+      {
+        id: 2,
+        name: "Crema Hidratante Intensiva",
+        category: "skincare",
+        price: 38.00,
+        image: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400&h=400&fit=crop",
+        description: "Crema rica en ceramidas y ácido hialurónico para una hidratación profunda y duradera. Ideal para pieles secas y sensibles.",
+        benefits: ["Hidratación 72 horas", "Fortalece la barrera cutánea", "Suaviza líneas finas", "Sin fragancia"],
+        ingredients: "Ceramidas, Ácido Hialurónico, Manteca de Karité, Escualano, Niacinamida"
+      },
+      {
+        id: 3,
+        name: "Paleta de Sombras Nude",
+        category: "maquillaje",
+        price: 42.00,
+        image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=400&fit=crop",
+        badge: "Nuevo",
+        description: "Paleta versátil con 12 tonos nude desde mates hasta brillantes. Pigmentación intensa y larga duración.",
+        benefits: ["12 tonos complementarios", "Alta pigmentación", "Fórmula cremosa", "Larga duración"],
+        ingredients: "Talco, Mica, Óxidos de Hierro, Vitamina E, Aceite de Jojoba"
+      },
+      {
+        id: 4,
+        name: "Labial Mate Aterciopelado",
+        category: "maquillaje",
+        price: 24.00,
+        originalPrice: 28.00,
+        image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=400&fit=crop",
+        description: "Labial líquido con acabado mate aterciopelado que no reseca. Colores intensos con una sola aplicación.",
+        benefits: ["Acabado mate", "No reseca", "Larga duración", "Hidratante"],
+        ingredients: "Aceite de Argán, Vitamina E, Manteca de Cacao, Pigmentos naturales"
+      },
+      {
+        id: 5,
+        name: "Aceite Reparador Capilar",
+        category: "cabello",
+        price: 32.00,
+        image: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=400&h=400&fit=crop",
+        badge: "Orgánico",
+        description: "Aceite nutritivo con argán y coco para reparar el cabello dañado. Aporta brillo sin engrasar.",
+        benefits: ["Repara puntas abiertas", "Aporta brillo", "No engrasa", "Protección térmica"],
+        ingredients: "Aceite de Argán, Aceite de Coco, Vitamina E, Aceite de Semilla de Uva"
+      },
+      {
+        id: 6,
+        name: "Mascarilla Hidratante Capilar",
+        category: "cabello",
+        price: 28.00,
+        image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400&h=400&fit=crop",
+        description: "Mascarilla intensiva con keratina y proteínas para restaurar la fibra capilar. Cabello suave y manejable.",
+        benefits: ["Restaura la fibra", "Nutre en profundidad", "Desenreda", "Protege del calor"],
+        ingredients: "Keratina, Proteínas de Seda, Pantenol, Extracto de Bambú, Aceite de Oliva"
+      },
+      {
+        id: 7,
+        name: "Eau de Parfum Floral",
+        category: "fragancias",
+        price: 78.00,
+        originalPrice: 95.00,
+        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=400&fit=crop",
+        badge: "Oferta",
+        description: "Fragancia femenina con notas de rosa, jazmín y almizcle blanco. Elegante y sofisticada para el día y la noche.",
+        benefits: ["Larga duración", "Notas florales", "Elegante", "50ml"],
+        ingredients: "Notas de salida: Bergamota, Pera. Corazón: Rosa, Jazmín. Fondo: Almizcle, Sándalo"
+      },
+      {
+        id: 8,
+        name: "Body Mist Vainilla",
+        category: "fragancias",
+        price: 22.00,
+        image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=400&fit=crop",
+        description: "Bruma corporal ligera con notas dulces de vainilla y caramelo. Perfecta para refrescar durante el día.",
+        benefits: ["Ligera", "Refrescante", "Dulce", "250ml"],
+        ingredients: "Extracto de Vainilla, Caramelo, Almizcle, Agua de Rosa"
+      },
+      {
+        id: 9,
+        name: "Crema Corporal Nutritiva",
+        category: "corporal",
+        price: 26.00,
+        image: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&h=400&fit=crop",
+        description: "Crema corporal rica con manteca de karité y aceite de almendras. Hidratación intensa para piel seca.",
+        benefits: ["Hidratación intensiva", "Suaviza la piel", "Absorción rápida", "Sin parabenos"],
+        ingredients: "Manteca de Karité, Aceite de Almendras, Vitamina E, Aloe Vera"
+      },
+      {
+        id: 10,
+        name: "Exfoliante Corporal Café",
+        category: "corporal",
+        price: 24.00,
+        image: "https://images.unsplash.com/photo-1570194065650-d99fb4b38b15?w=400&h=400&fit=crop",
+        badge: "Natural",
+        description: "Exfoliante natural con café arábica y aceite de coco. Elimina células muertas y activa la circulación.",
+        benefits: ["100% Natural", "Reduce celulitis", "Suaviza", "Activa circulación"],
+        ingredients: "Café Arábica, Aceite de Coco, Azúcar de Caña, Vitamina E"
+      },
+      {
+        id: 11,
+        name: "Contorno de Ojos Antiedad",
+        category: "skincare",
+        price: 52.00,
+        image: "https://images.unsplash.com/photo-1617897903246-719242758050?w=400&h=400&fit=crop",
+        description: "Tratamiento concentrado para el contorno de ojos con retinol y péptidos. Reduce ojeras y líneas finas.",
+        benefits: ["Reduce ojeras", "Disminuye bolsas", "Anti arrugas", "Ilumina"],
+        ingredients: "Retinol Encapsulado, Péptidos, Cafeína, Vitamina K, Ácido Hialurónico"
+      },
+      {
+        id: 12,
+        name: "Base de Maquillaje Natural",
+        category: "maquillaje",
+        price: 36.00,
+        image: "https://images.unsplash.com/photo-1631214500115-598fc2cb8d5d?w=400&h=400&fit=crop",
+        description: "Base ligera con acabado natural y SPF 30. Cobertura buildable que se adapta a tu tono de piel.",
+        benefits: ["SPF 30", "Acabado natural", "Ligera", "No comedogénico"],
+        ingredients: "Filtros Solares, Vitamina E, Niacinamida, Extracto de Camomila"
+      }
+    ];
+
+    // State
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let currentCategory = 'all';
+    let searchQuery = '';
+    let selectedProduct = null;
+    let modalQuantity = 1;
+
+    // DOM Elements
+    const productGrid = document.getElementById('productGrid');
+    const searchInput = document.getElementById('searchInput');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const cartButton = document.getElementById('cartButton');
+    const cartBadge = document.getElementById('cartBadge');
+    const cartDrawer = document.getElementById('cartDrawer');
+    const cartOverlay = document.getElementById('cartOverlay');
+    const cartClose = document.getElementById('cartClose');
+    const cartItems = document.getElementById('cartItems');
+    const cartSubtotal = document.getElementById('cartSubtotal');
+    const cartTotal = document.getElementById('cartTotal');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    const productModal = document.getElementById('productModal');
+    const modalClose = document.getElementById('modalClose');
+    const toast = document.getElementById('toast');
+
+    // Functions
+    function filterProducts() {
+      let filtered = products;
+      
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(p => p.category === currentCategory);
+      }
+      
+      if (searchQuery) {
+        const query = searchQuery.toLowerCase();
+        filtered = filtered.filter(p => 
+          p.name.toLowerCase().includes(query) || 
+          p.description.toLowerCase().includes(query) ||
+          p.category.toLowerCase().includes(query)
+        );
+      }
+      
+      return filtered;
+    }
+
+    function renderProducts() {
+      const filtered = filterProducts();
+      
+      if (filtered.length === 0) {
+        productGrid.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--foreground-light);">
+            <p style="font-size: 1.125rem; margin-bottom: 0.5rem;">No se encontraron productos</p>
+            <p>Intenta con otra búsqueda o categoría</p>
+          </div>
+        `;
+        return;
+      }
+      
+      productGrid.innerHTML = filtered.map((product, index) => `
+        <div class="product-card" data-id="${product.id}" style="animation-delay: ${index * 0.05}s">
+          <div class="product-image">
+            <img src="${product.image}" alt="${product.name}">
+            ${product.badge ? `<span class="product-badge ${product.badge === 'Oferta' ? 'sale' : ''}">${product.badge}</span>` : ''}
+          </div>
+          <div class="product-info">
+            <p class="product-category">${product.category}</p>
+            <h3 class="product-name">${product.name}</h3>
+            <div class="product-price">
+              <span class="price-current">$${product.price.toFixed(2)}</span>
+              ${product.originalPrice ? `<span class="price-original">$${product.originalPrice.toFixed(2)}</span>` : ''}
+            </div>
+            <button class="add-to-cart" data-id="${product.id}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+              Agregar
+            </button>
+          </div>
+        </div>
+      `).join('');
+
+      // Add event listeners
+      document.querySelectorAll('.product-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+          if (!e.target.closest('.add-to-cart')) {
+            openProductModal(parseInt(card.dataset.id));
+          }
+        });
+      });
+
+      document.querySelectorAll('.add-to-cart').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          addToCart(parseInt(btn.dataset.id), 1);
+        });
+      });
+    }
+
+    function openProductModal(productId) {
+      selectedProduct = products.find(p => p.id === productId);
+      if (!selectedProduct) return;
+
+      modalQuantity = 1;
+      document.getElementById('modalImage').src = selectedProduct.image;
+      document.getElementById('modalImage').alt = selectedProduct.name;
+      document.getElementById('modalCategory').textContent = selectedProduct.category;
+      document.getElementById('modalName').textContent = selectedProduct.name;
+      document.getElementById('modalPrice').textContent = `$${selectedProduct.price.toFixed(2)}`;
+      document.getElementById('modalOriginalPrice').textContent = selectedProduct.originalPrice ? `$${selectedProduct.originalPrice.toFixed(2)}` : '';
+      document.getElementById('modalDescription').textContent = selectedProduct.description;
+      document.getElementById('modalBenefits').innerHTML = selectedProduct.benefits.map(b => `<li>${b}</li>`).join('');
+      document.getElementById('modalIngredients').textContent = selectedProduct.ingredients;
+      document.getElementById('qtyValue').textContent = modalQuantity;
+
+      productModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProductModal() {
+      productModal.classList.remove('active');
+      document.body.style.overflow = '';
+      selectedProduct = null;
+    }
+
+    function addToCart(productId, quantity) {
+      const product = products.find(p => p.id === productId);
+      if (!product) return;
+
+      const existingItem = cart.find(item => item.id === productId);
+      if (existingItem) {
+        existingItem.quantity += quantity;
+      } else {
+        cart.push({ ...product, quantity });
+      }
+
+      saveCart();
+      updateCartBadge();
+      showToast(`${product.name} agregado al carrito`);
+    }
+
+    function removeFromCart(productId) {
+      cart = cart.filter(item => item.id !== productId);
+      saveCart();
+      updateCartBadge();
+      renderCart();
+    }
+
+    function updateCartItemQuantity(productId, delta) {
+      const item = cart.find(item => item.id === productId);
+      if (!item) return;
+
+      item.quantity += delta;
+      if (item.quantity <= 0) {
+        removeFromCart(productId);
+        return;
+      }
+
+      saveCart();
+      renderCart();
+    }
+
+    function saveCart() {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    function updateCartBadge() {
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      cartBadge.textContent = totalItems;
+      cartBadge.style.display = totalItems > 0 ? 'flex' : 'none';
+    }
+
+    function calculateTotal() {
+      return cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    }
+
+    function renderCart() {
+      if (cart.length === 0) {
+        cartItems.innerHTML = `
+          <div class="cart-empty">
+            <svg class="cart-empty-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            <p>Tu carrito está vacío</p>
+          </div>
+        `;
+        checkoutBtn.disabled = true;
+      } else {
+        cartItems.innerHTML = cart.map(item => `
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <img src="${item.image}" alt="${item.name}">
+            </div>
+            <div class="cart-item-details">
+              <h4 class="cart-item-name">${item.name}</h4>
+              <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+              <div class="cart-item-controls">
+                <button class="cart-qty-btn" data-id="${item.id}" data-delta="-1">-</button>
+                <span class="cart-item-qty">${item.quantity}</span>
+                <button class="cart-qty-btn" data-id="${item.id}" data-delta="1">+</button>
+                <button class="cart-item-remove" data-id="${item.id}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        checkoutBtn.disabled = false;
+
+        // Add event listeners
+        document.querySelectorAll('.cart-qty-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            updateCartItemQuantity(parseInt(btn.dataset.id), parseInt(btn.dataset.delta));
+          });
+        });
+
+        document.querySelectorAll('.cart-item-remove').forEach(btn => {
+          btn.addEventListener('click', () => {
+            removeFromCart(parseInt(btn.dataset.id));
+          });
+        });
+      }
+
+      const total = calculateTotal();
+      cartSubtotal.textContent = `$${total.toFixed(2)}`;
+      cartTotal.textContent = `$${total.toFixed(2)}`;
+    }
+
+    function openCart() {
+      renderCart();
+      cartDrawer.classList.add('active');
+      cartOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCart() {
+      cartDrawer.classList.remove('active');
+      cartOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('active');
+      setTimeout(() => {
+        toast.classList.remove('active');
+      }, 3000);
+    }
+
+    // Event Listeners
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        navLinks.forEach(l => l.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelector(`.nav-links a[data-category="${btn.dataset.category}"]`)?.classList.add('active');
+        currentCategory = btn.dataset.category;
+        renderProducts();
+      });
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        navLinks.forEach(l => l.classList.remove('active'));
+        filterBtns.forEach(b => b.classList.remove('active'));
+        link.classList.add('active');
+        document.querySelector(`.filter-btn[data-category="${link.dataset.category}"]`)?.classList.add('active');
+        currentCategory = link.dataset.category;
+        renderProducts();
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      renderProducts();
+    });
+
+    cartButton.addEventListener('click', openCart);
+    cartClose.addEventListener('click', closeCart);
+    cartOverlay.addEventListener('click', closeCart);
+
+    modalClose.addEventListener('click', closeProductModal);
+    productModal.addEventListener('click', (e) => {
+      if (e.target === productModal) closeProductModal();
+    });
+
+    document.getElementById('qtyMinus').addEventListener('click', () => {
+      if (modalQuantity > 1) {
+        modalQuantity--;
+        document.getElementById('qtyValue').textContent = modalQuantity;
+      }
+    });
+
+    document.getElementById('qtyPlus').addEventListener('click', () => {
+      modalQuantity++;
+      document.getElementById('qtyValue').textContent = modalQuantity;
+    });
+
+    document.getElementById('modalAddCart').addEventListener('click', () => {
+      if (selectedProduct) {
+        addToCart(selectedProduct.id, modalQuantity);
+        closeProductModal();
+      }
+    });
+
+    checkoutBtn.addEventListener('click', () => {
+      alert('Funcionalidad de pago próximamente');
+    });
+
+    // Keyboard events
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProductModal();
+        closeCart();
+      }
+    });
+
+    // Initialize
+    updateCartBadge();
+    renderProducts();
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+    {
+        "question": "¿Qué clima preferís para tus vacaciones?",
+        "answers": [
+            { "text": "Calor tropical y sol radiante", "icon": "☀️", "type": "playa" },
+            { "text": "Frío con nieve y montañas", "icon": "❄️", "type": "montaña" },
+            { "text": "Clima templado y agradable", "icon": "🌤️", "type": "ciudad" },
+            { "text": "Naturaleza húmeda y exuberante", "icon": "🌧️", "type": "selva" }
+        ]
+    },
+    {
+        "question": "¿Qué tipo de actividades disfrutás más?",
+        "answers": [
+            { "text": "Relajarme en la playa", "icon": "🏖️", "type": "playa" },
+            { "text": "Deportes de aventura extrema", "icon": "🏔️", "type": "montaña" },
+            { "text": "Visitar museos y monumentos", "icon": "🏛️", "type": "cultural" },
+            { "text": "Explorar flora y fauna", "icon": "🦜", "type": "selva" }
+        ]
+    },
+    {
+        "question": "¿Cómo te imaginás tu alojamiento ideal?",
+        "answers": [
+            { "text": "Resort frente al mar", "icon": "🏨", "type": "playa" },
+            { "text": "Cabaña en las montañas", "icon": "🏠", "type": "montaña" },
+            { "text": "Hotel boutique en el centro", "icon": "🏙️", "type": "ciudad" },
+            { "text": "Eco-lodge en la naturaleza", "icon": "🌿", "type": "selva" }
+        ]
+    },
+    {
+        "question": "¿Qué comida te gustaría probar en tu viaje?",
+        "answers": [
+            { "text": "Mariscos y comida tropical", "icon": "🦐", "type": "playa" },
+            { "text": "Fondue y comida de montaña", "icon": "🧀", "type": "montaña" },
+            { "text": "Alta gastronomía europea", "icon": "🍷", "type": "ciudad" },
+            { "text": "Comida tradicional y exótica", "icon": "🍲", "type": "cultural" }
+        ]
+    },
+    {
+        "question": "¿Qué es lo más importante para vos en un viaje?",
+        "answers": [
+            { "text": "Descansar y desconectar", "icon": "😌", "type": "playa" },
+            { "text": "Vivir experiencias únicas", "icon": "⛷️", "type": "montaña" },
+            { "text": "Conocer historia y arte", "icon": "🎨", "type": "cultural" },
+            { "text": "Conectar con la naturaleza", "icon": "🌺", "type": "selva" }
+        ]
+    },
+    {
+        "question": "¿Con quién preferís viajar?",
+        "answers": [
+            { "text": "En pareja, algo romántico", "icon": "💑", "type": "playa" },
+            { "text": "Con amigos aventureros", "icon": "🧗", "type": "montaña" },
+            { "text": "Solo/a, explorando a mi ritmo", "icon": "🚶", "type": "ciudad" },
+            { "text": "En familia, todos juntos", "icon": "👨‍👩‍👧‍👦", "type": "cultural" }
+        ]
+    },
+    {
+        "question": "¿Qué tipo de fotos te gustaría traer?",
+        "answers": [
+            { "text": "Atardeceres en el mar", "icon": "🌅", "type": "playa" },
+            { "text": "Paisajes nevados épicos", "icon": "🏔️", "type": "montaña" },
+            { "text": "Arquitectura y calles bonitas", "icon": "📸", "type": "ciudad" },
+            { "text": "Animales y paisajes verdes", "icon": "🐒", "type": "selva" }
+        ]
+    }
+]
